@@ -10,14 +10,12 @@ datasets:
   - UNSW-NB15
   - CIC-IDS2018
 
-# Models to compare
+# Models to compare (4 core models — sufficient for publication)
 models:
   - Mamba
   - LSTM
   - GRU
-  - Transformer
   - CNN-LSTM
-  - TCN
 
 # Random seeds for statistical significance (5 runs)
 seeds: [42, 123, 456, 789, 1024]
