@@ -27,12 +27,13 @@ def main():
         print("\n⚠ Only 1 GPU detected. Running normally on GPU 0...")
         os.execv(sys.executable, [sys.executable, "-u", "run_benchmark.py",
                                    "--datasets", "CICIDS2017", "UNSW-NB15",
-                                   "--seeds", "42", "123", "456", "789", "1024"])
+                                   "--seeds", "42", "123", "456",
+                                   "--max_samples", "200000"])
         return
     
     print(f"\n🚀 Running on {n_gpus} GPUs in parallel!")
-    print("   GPU 0: Seeds [42, 123, 456] — CICIDS2017 + UNSW-NB15")
-    print("   GPU 1: Seeds [789, 1024]    — CICIDS2017 + UNSW-NB15")
+    print("   GPU 0: Seeds [42, 123]  — CICIDS2017 + UNSW-NB15 (200K samples)")
+    print("   GPU 1: Seed  [456]      — CICIDS2017 + UNSW-NB15 (200K samples)")
     print("=" * 60)
     
     import threading
@@ -54,22 +55,24 @@ def main():
     p0 = subprocess.Popen(
         [sys.executable, "-u", "run_benchmark.py",
          "--datasets", "CICIDS2017", "UNSW-NB15",
-         "--seeds", "42", "123", "456"],
+         "--seeds", "42", "123",
+         "--max_samples", "200000"],
         env=env0,
         stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
         text=True, bufsize=1
     )
-    print(f"✅ GPU 0 started (PID {p0.pid}) — seeds [42, 123, 456]")
+    print(f"✅ GPU 0 started (PID {p0.pid}) — seeds [42, 123]")
     
     p1 = subprocess.Popen(
         [sys.executable, "-u", "run_benchmark.py",
          "--datasets", "CICIDS2017", "UNSW-NB15",
-         "--seeds", "789", "1024"],
+         "--seeds", "456",
+         "--max_samples", "200000"],
         env=env1,
         stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
         text=True, bufsize=1
     )
-    print(f"✅ GPU 1 started (PID {p1.pid}) — seeds [789, 1024]")
+    print(f"✅ GPU 1 started (PID {p1.pid}) — seed [456]")
     
     print("\n⏳ Both GPUs training in parallel — live output below:\n")
     

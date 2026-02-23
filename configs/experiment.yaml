@@ -17,8 +17,8 @@ models:
   - GRU
   - CNN-LSTM
 
-# Random seeds for statistical significance (5 runs)
-seeds: [42, 123, 456, 789, 1024]
+# Random seeds for statistical significance (3 runs)
+seeds: [42, 123, 456]
 
 # Dataset Configuration
 dataset:
