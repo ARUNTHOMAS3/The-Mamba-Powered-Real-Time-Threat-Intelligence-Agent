@@ -28,7 +28,7 @@ def main():
         os.execv(sys.executable, [sys.executable, "-u", "run_benchmark.py",
                                    "--datasets", "CICIDS2017", "UNSW-NB15",
                                    "--seeds", "42", "123", "456",
-                                   "--max_samples", "200000"])
+                                   "--max-samples", "200000"])
         return
     
     print(f"\n🚀 Running on {n_gpus} GPUs in parallel!")
@@ -56,7 +56,7 @@ def main():
         [sys.executable, "-u", "run_benchmark.py",
          "--datasets", "CICIDS2017", "UNSW-NB15",
          "--seeds", "42", "123",
-         "--max_samples", "200000"],
+         "--max-samples", "200000"],
         env=env0,
         stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
         text=True, bufsize=1
@@ -67,7 +67,7 @@ def main():
         [sys.executable, "-u", "run_benchmark.py",
          "--datasets", "CICIDS2017", "UNSW-NB15",
          "--seeds", "456",
-         "--max_samples", "200000"],
+         "--max-samples", "200000"],
         env=env1,
         stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
         text=True, bufsize=1
