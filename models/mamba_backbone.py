@@ -1,8 +1,25 @@
 # models/mamba_backbone.py
+"""
+Mamba backbone with automatic mamba-ssm acceleration.
+
+When mamba-ssm is installed (pip install mamba-ssm), uses CUDA-optimized
+selective scan kernels for 5-10x speedup. Falls back to pure PyTorch
+implementation when mamba-ssm is not available (e.g., Kaggle, CPU-only).
+"""
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import math
+
+# Try to import mamba-ssm for CUDA-accelerated selective scan
+try:
+    from mamba_ssm import Mamba as MambaSSM
+    HAS_MAMBA_SSM = True
+    print("[Mamba] Using CUDA-accelerated mamba-ssm kernels ⚡")
+except ImportError:
+    HAS_MAMBA_SSM = False
+    print("[Mamba] mamba-ssm not found, using pure PyTorch (slower)")
+
 
 class MambaConfig:
     def __init__(self, d_model=128, d_state=16, d_conv=4, expand=2):
@@ -11,6 +28,7 @@ class MambaConfig:
         self.d_conv = d_conv
         self.expand = expand
         self.d_inner = self.expand * self.d_model
+
 
 class PureMambaBlock(nn.Module):
     """
@@ -39,7 +57,6 @@ class PureMambaBlock(nn.Module):
         )
 
         # Projection for x to B, C, delta
-        # dt_rank = math.ceil(d_model / 16)
         self.dt_rank = math.ceil(d_model / 16)
         self.x_proj = nn.Linear(self.d_inner, self.dt_rank + d_state * 2, bias=False)
         
@@ -69,7 +86,6 @@ class PureMambaBlock(nn.Module):
         x_branch = self.act(x_branch)
 
         # 3. Discretization & SSM (Scan)
-        # We need to compute B, C, dt from x_branch
         x_dbl = self.x_proj(x_branch)  # (B, L, dt_rank + 2*d_state)
         
         dt, B, C = torch.split(x_dbl, [self.dt_rank, self.d_state, self.d_state], dim=-1)
@@ -80,13 +96,11 @@ class PureMambaBlock(nn.Module):
         A = -torch.exp(self.A_log)  # (d_inner, d_state)
         
         # Pre-compute all discretized params as full tensors
-        # dt: (B, L, d_inner), B: (B, L, d_state), C: (B, L, d_state)
         dA = torch.exp(A.unsqueeze(0).unsqueeze(0) * dt.unsqueeze(-1))  # (B, L, d_inner, d_state)
         dB = dt.unsqueeze(-1) * B.unsqueeze(2)  # (B, L, d_inner, d_state)
         dBx = dB * x_branch.unsqueeze(-1)       # (B, L, d_inner, d_state)
         
         # Sequential scan (required for correctness of recurrence)
-        # but with minimal Python overhead — operate on pre-computed tensors
         h = torch.zeros(b, self.d_inner, self.d_state, device=x.device, dtype=x.dtype)
         ys = []
         for t in range(l):
@@ -104,6 +118,12 @@ class PureMambaBlock(nn.Module):
 
 
 class MambaBackbone(nn.Module):
+    """
+    Mamba backbone that auto-selects CUDA-accelerated or pure PyTorch block.
+    
+    When mamba-ssm is installed: uses MambaSSM (fused CUDA selective scan)
+    When not installed:          uses PureMambaBlock (Python loop fallback)
+    """
     def __init__(self, d_input, d_model=128, d_state=16):
         super().__init__()
         self.d_model = d_model
@@ -111,8 +131,18 @@ class MambaBackbone(nn.Module):
         # Project input to d_model first if needed
         self.embedding = nn.Linear(d_input, d_model)
         
-        # Use our Pure PyTorch Mamba Block
-        self.mamba_block = PureMambaBlock(d_model, d_state=d_state)
+        # Choose backend based on availabile
+        if HAS_MAMBA_SSM:
+            # CUDA-optimized Mamba block from mamba-ssm library
+            self.mamba_block = MambaSSM(
+                d_model=d_model,
+                d_state=d_state,
+                d_conv=4,
+                expand=2,
+            )
+        else:
+            # Pure PyTorch fallback
+            self.mamba_block = PureMambaBlock(d_model, d_state=d_state)
         
         self.layernorm = nn.LayerNorm(d_model)
 
