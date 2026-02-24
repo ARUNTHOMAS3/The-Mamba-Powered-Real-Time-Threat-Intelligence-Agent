@@ -53,11 +53,14 @@ class UNSWNB15Dataset(Dataset):
             os.makedirs(self.root_dir, exist_ok=True)
         
         # Try different file naming conventions
+        # IMPORTANT: Prioritize training/testing CSVs — they have proper headers
+        # (label, attack_cat columns). The raw _1 to _4 CSVs lack headers and
+        # will cause all samples to be mislabeled as Attack.
         possible_files = [
-            # Standard 4-part split
-            [f"UNSW-NB15_{i}.csv" for i in range(1, 5)],
-            # Training/testing split
+            # Training/testing split (has headers with 'label' and 'attack_cat')
             ["UNSW_NB15_training-set.csv", "UNSW_NB15_testing-set.csv"],
+            # Standard 4-part split (raw, no headers — needs column mapping)
+            [f"UNSW-NB15_{i}.csv" for i in range(1, 5)],
             # Alternative names
             ["UNSW-NB15_features.csv"],
         ]

@@ -44,8 +44,8 @@ MODEL_LR_SCALE = {
     'Transformer': 0.3,  # Self-attention gradients can explode
     'CNN-LSTM': 0.5,     # Hybrid arch needs moderate LR
     'TCN': 0.5,          # Dilated convs can be unstable
-    'LSTM': 1.0,         # Stable at full LR
-    'GRU': 1.0,          # Stable at full LR
+    'LSTM': 0.5,         # Reduced from 1.0 — collapsed on seeds 123/456
+    'GRU': 0.5,          # Reduced from 1.0 — collapsed on seeds 123/456
 }
 
 GRAD_CLIP_NORM = {
@@ -57,9 +57,9 @@ GRAD_CLIP_NORM = {
     'GRU': 0.5,          # GRU was unstable, tighter clipping
 }
 
-# Only models that need warmup get it (LSTM/GRU are stable without it)
-WARMUP_MODELS = {'Mamba', 'Transformer'}
-WARMUP_EPOCHS = 3
+# All recurrent/sequential models get warmup to prevent majority-class collapse
+WARMUP_MODELS = {'Mamba', 'Transformer', 'LSTM', 'GRU'}
+WARMUP_EPOCHS = 5
 
 
 def train_model(model, train_loader, val_loader, config, device, pos_weight=None, model_name='Unknown'):
