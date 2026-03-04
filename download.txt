@@ -1,1773 +1,0 @@
-6.6s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
-6.6s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
-6.6s 3 0.00s - to python to disable frozen modules.
-6.6s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
-7.3s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
-7.3s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
-7.3s 7 0.00s - to python to disable frozen modules.
-7.3s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
-8.3s 9 /kaggle/input/datasets/mrwellsdavid/unsw-nb15/UNSW_NB15_testing-set.csv
-8.3s 10 /kaggle/input/datasets/mrwellsdavid/unsw-nb15/UNSW-NB15_1.csv
-8.3s 11 /kaggle/input/datasets/mrwellsdavid/unsw-nb15/UNSW_NB15_training-set.csv
-8.3s 12 /kaggle/input/datasets/mrwellsdavid/unsw-nb15/UNSW-NB15_LIST_EVENTS.csv
-8.3s 13 /kaggle/input/datasets/mrwellsdavid/unsw-nb15/UNSW-NB15_4.csv
-8.3s 14 /kaggle/input/datasets/mrwellsdavid/unsw-nb15/UNSW-NB15_3.csv
-8.3s 15 /kaggle/input/datasets/mrwellsdavid/unsw-nb15/UNSW-NB15_2.csv
-8.3s 16 /kaggle/input/datasets/mrwellsdavid/unsw-nb15/NUSW-NB15_features.csv
-8.4s 17 Cloning into '/kaggle/working/mamba'...
-8.8s 18 remote: Enumerating objects: 145, done.[K
-8.9s 19 remote: Counting objects:   0% (1/145)[Kremote: Counting objects:   1% (2/145)[Kremote: Counting objects:   2% (3/145)[Kremote: Counting objects:   3% (5/145)[Kremote: Counting objects:   4% (6/145)[Kremote: Counting objects:   5% (8/145)[Kremote: Counting objects:   6% (9/145)[Kremote: Counting objects:   7% (11/145)[Kremote: Counting objects:   8% (12/145)[Kremote: Counting objects:   9% (14/145)[Kremote: Counting objects:  10% (15/145)[Kremote: Counting objects:  11% (16/145)[Kremote: Counting objects:  12% (18/145)[Kremote: Counting objects:  13% (19/145)[Kremote: Counting objects:  14% (21/145)[Kremote: Counting objects:  15% (22/145)[Kremote: Counting objects:  16% (24/145)[Kremote: Counting objects:  17% (25/145)[Kremote: Counting objects:  18% (27/145)[Kremote: Counting objects:  19% (28/145)[Kremote: Counting objects:  20% (29/145)[Kremote: Counting objects:  21% (31/145)[Kremote: Counting objects:  22% (32/145)[Kremote: Counting objects:  23% (34/145)[Kremote: Counting objects:  24% (35/145)[Kremote: Counting objects:  25% (37/145)[Kremote: Counting objects:  26% (38/145)[Kremote: Counting objects:  27% (40/145)[Kremote: Counting objects:  28% (41/145)[Kremote: Counting objects:  29% (43/145)[Kremote: Counting objects:  30% (44/145)[Kremote: Counting objects:  31% (45/145)[Kremote: Counting objects:  32% (47/145)[Kremote: Counting objects:  33% (48/145)[Kremote: Counting objects:  34% (50/145)[Kremote: Counting objects:  35% (51/145)[Kremote: Counting objects:  36% (53/145)[Kremote: Counting objects:  37% (54/145)[Kremote: Counting objects:  38% (56/145)[Kremote: Counting objects:  39% (57/145)[Kremote: Counting objects:  40% (58/145)[Kremote: Counting objects:  41% (60/145)[Kremote: Counting objects:  42% (61/145)[Kremote: Counting objects:  43% (63/145)[Kremote: Counting objects:  44% (64/145)[Kremote: Counting objects:  45% (66/145)[Kremote: Counting objects:  46% (67/145)[Kremote: Counting objects:  47% (69/145)[Kremote: Counting objects:  48% (70/145)[Kremote: Counting objects:  49% (72/145)[Kremote: Counting objects:  50% (73/145)[Kremote: Counting objects:  51% (74/145)[Kremote: Counting objects:  52% (76/145)[Kremote: Counting objects:  53% (77/145)[Kremote: Counting objects:  54% (79/145)[Kremote: Counting objects:  55% (80/145)[Kremote: Counting objects:  56% (82/145)[Kremote: Counting objects:  57% (83/145)[Kremote: Counting objects:  58% (85/145)[Kremote: Counting objects:  59% (86/145)[Kremote: Counting objects:  60% (87/145)[Kremote: Counting objects:  61% (89/145)[Kremote: Counting objects:  62% (90/145)[Kremote: Counting objects:  63% (92/145)[Kremote: Counting objects:  64% (93/145)[Kremote: Counting objects:  65% (95/145)[Kremote: Counting objects:  66% (96/145)[Kremote: Counting objects:  67% (98/145)[Kremote: Counting objects:  68% (99/145)[Kremote: Counting objects:  69% (101/145)[Kremote: Counting objects:  70% (102/145)[Kremote: Counting objects:  71% (103/145)[Kremote: Counting objects:  72% (105/145)[Kremote: Counting objects:  73% (106/145)[Kremote: Counting objects:  74% (108/145)[Kremote: Counting objects:  75% (109/145)[Kremote: Counting objects:  76% (111/145)[Kremote: Counting objects:  77% (112/145)[Kremote: Counting objects:  78% (114/145)[Kremote: Counting objects:  79% (115/145)[Kremote: Counting objects:  80% (116/145)[Kremote: Counting objects:  81% (118/145)[Kremote: Counting objects:  82% (119/145)[Kremote: Counting objects:  83% (121/145)[Kremote: Counting objects:  84% (122/145)[Kremote: Counting objects:  85% (124/145)[Kremote: Counting objects:  86% (125/145)[Kremote: Counting objects:  87% (127/145)[Kremote: Counting objects:  88% (128/145)[Kremote: Counting objects:  89% (130/145)[Kremote: Counting objects:  90% (131/145)[Kremote: Counting objects:  91% (132/145)[Kremote: Counting objects:  92% (134/145)[Kremote: Counting objects:  93% (135/145)[Kremote: Counting objects:  94% (137/145)[Kremote: Counting objects:  95% (138/145)[Kremote: Counting objects:  96% (140/145)[Kremote: Counting objects:  97% (141/145)[Kremote: Counting objects:  98% (143/145)[Kremote: Counting objects:  99% (144/145)[Kremote: Counting objects: 100% (145/145)[Kremote: Counting objects: 100% (145/145), done.[K
-8.9s 20 remote: Compressing objects:   0% (1/108)[Kremote: Compressing objects:   1% (2/108)[Kremote: Compressing objects:   2% (3/108)[Kremote: Compressing objects:   3% (4/108)[Kremote: Compressing objects:   4% (5/108)[Kremote: Compressing objects:   5% (6/108)[Kremote: Compressing objects:   6% (7/108)[Kremote: Compressing objects:   7% (8/108)[Kremote: Compressing objects:   8% (9/108)[Kremote: Compressing objects:   9% (10/108)[Kremote: Compressing objects:  10% (11/108)[Kremote: Compressing objects:  11% (12/108)[Kremote: Compressing objects:  12% (13/108)[Kremote: Compressing objects:  13% (15/108)[Kremote: Compressing objects:  14% (16/108)[Kremote: Compressing objects:  15% (17/108)[Kremote: Compressing objects:  16% (18/108)[Kremote: Compressing objects:  17% (19/108)[Kremote: Compressing objects:  18% (20/108)[Kremote: Compressing objects:  19% (21/108)[Kremote: Compressing objects:  20% (22/108)[Kremote: Compressing objects:  21% (23/108)[Kremote: Compressing objects:  22% (24/108)[Kremote: Compressing objects:  23% (25/108)[Kremote: Compressing objects:  24% (26/108)[Kremote: Compressing objects:  25% (27/108)[Kremote: Compressing objects:  26% (29/108)[Kremote: Compressing objects:  27% (30/108)[Kremote: Compressing objects:  28% (31/108)[Kremote: Compressing objects:  29% (32/108)[Kremote: Compressing objects:  30% (33/108)[Kremote: Compressing objects:  31% (34/108)[Kremote: Compressing objects:  32% (35/108)[Kremote: Compressing objects:  33% (36/108)[Kremote: Compressing objects:  34% (37/108)[Kremote: Compressing objects:  35% (38/108)[Kremote: Compressing objects:  36% (39/108)[Kremote: Compressing objects:  37% (40/108)[Kremote: Compressing objects:  38% (42/108)[Kremote: Compressing objects:  39% (43/108)[Kremote: Compressing objects:  40% (44/108)[Kremote: Compressing objects:  41% (45/108)[Kremote: Compressing objects:  42% (46/108)[Kremote: Compressing objects:  43% (47/108)[Kremote: Compressing objects:  44% (48/108)[Kremote: Compressing objects:  45% (49/108)[Kremote: Compressing objects:  46% (50/108)[Kremote: Compressing objects:  47% (51/108)[Kremote: Compressing objects:  48% (52/108)[Kremote: Compressing objects:  49% (53/108)[Kremote: Compressing objects:  50% (54/108)[Kremote: Compressing objects:  51% (56/108)[Kremote: Compressing objects:  52% (57/108)[Kremote: Compressing objects:  53% (58/108)[Kremote: Compressing objects:  54% (59/108)[Kremote: Compressing objects:  55% (60/108)[Kremote: Compressing objects:  56% (61/108)[Kremote: Compressing objects:  57% (62/108)[Kremote: Compressing objects:  58% (63/108)[Kremote: Compressing objects:  59% (64/108)[Kremote: Compressing objects:  60% (65/108)[Kremote: Compressing objects:  61% (66/108)[Kremote: Compressing objects:  62% (67/108)[Kremote: Compressing objects:  63% (69/108)[Kremote: Compressing objects:  64% (70/108)[Kremote: Compressing objects:  65% (71/108)[Kremote: Compressing objects:  66% (72/108)[Kremote: Compressing objects:  67% (73/108)[Kremote: Compressing objects:  68% (74/108)[Kremote: Compressing objects:  69% (75/108)[Kremote: Compressing objects:  70% (76/108)[Kremote: Compressing objects:  71% (77/108)[Kremote: Compressing objects:  72% (78/108)[Kremote: Compressing objects:  73% (79/108)[Kremote: Compressing objects:  74% (80/108)[Kremote: Compressing objects:  75% (81/108)[Kremote: Compressing objects:  76% (83/108)[Kremote: Compressing objects:  77% (84/108)[Kremote: Compressing objects:  78% (85/108)[Kremote: Compressing objects:  79% (86/108)[Kremote: Compressing objects:  80% (87/108)[Kremote: Compressing objects:  81% (88/108)[Kremote: Compressing objects:  82% (89/108)[Kremote: Compressing objects:  83% (90/108)[Kremote: Compressing objects:  84% (91/108)[Kremote: Compressing objects:  85% (92/108)[Kremote: Compressing objects:  86% (93/108)[Kremote: Compressing objects:  87% (94/108)[Kremote: Compressing objects:  88% (96/108)[Kremote: Compressing objects:  89% (97/108)[Kremote: Compressing objects:  90% (98/108)[Kremote: Compressing objects:  91% (99/108)[Kremote: Compressing objects:  92% (100/108)[Kremote: Compressing objects:  93% (101/108)[Kremote: Compressing objects:  94% (102/108)[Kremote: Compressing objects:  95% (103/108)[Kremote: Compressing objects:  96% (104/108)[Kremote: Compressing objects:  97% (105/108)[Kremote: Compressing objects:  98% (106/108)[Kremote: Compressing objects:  99% (107/108)[Kremote: Compressing objects: 100% (108/108)[Kremote: Compressing objects: 100% (108/108), done.[K
-8.9s 21 Receiving objects:   0% (1/145)Receiving objects:   1% (2/145)Receiving objects:   2% (3/145)Receiving objects:   3% (5/145)Receiving objects:   4% (6/145)Receiving objects:   5% (8/145)Receiving objects:   6% (9/145)Receiving objects:   7% (11/145)Receiving objects:   8% (12/145)Receiving objects:   9% (14/145)Receiving objects:  10% (15/145)Receiving objects:  11% (16/145)Receiving objects:  12% (18/145)Receiving objects:  13% (19/145)Receiving objects:  14% (21/145)Receiving objects:  15% (22/145)Receiving objects:  16% (24/145)Receiving objects:  17% (25/145)Receiving objects:  18% (27/145)Receiving objects:  19% (28/145)Receiving objects:  20% (29/145)Receiving objects:  21% (31/145)Receiving objects:  22% (32/145)Receiving objects:  23% (34/145)Receiving objects:  24% (35/145)Receiving objects:  25% (37/145)Receiving objects:  26% (38/145)Receiving objects:  27% (40/145)Receiving objects:  28% (41/145)Receiving objects:  29% (43/145)Receiving objects:  30% (44/145)Receiving objects:  31% (45/145)Receiving objects:  32% (47/145)Receiving objects:  33% (48/145)Receiving objects:  34% (50/145)Receiving objects:  35% (51/145)Receiving objects:  36% (53/145)Receiving objects:  37% (54/145)Receiving objects:  38% (56/145)Receiving objects:  39% (57/145)Receiving objects:  40% (58/145)Receiving objects:  41% (60/145)Receiving objects:  42% (61/145)Receiving objects:  43% (63/145)Receiving objects:  44% (64/145)Receiving objects:  45% (66/145)Receiving objects:  46% (67/145)Receiving objects:  47% (69/145)Receiving objects:  48% (70/145)Receiving objects:  49% (72/145)remote: Total 145 (delta 40), reused 133 (delta 28), pack-reused 0 (from 0)[K
-8.9s 22 Receiving objects:  50% (73/145)Receiving objects:  51% (74/145)Receiving objects:  52% (76/145)Receiving objects:  53% (77/145)Receiving objects:  54% (79/145)Receiving objects:  55% (80/145)Receiving objects:  56% (82/145)Receiving objects:  57% (83/145)Receiving objects:  58% (85/145)Receiving objects:  59% (86/145)Receiving objects:  60% (87/145)Receiving objects:  61% (89/145)Receiving objects:  62% (90/145)Receiving objects:  63% (92/145)Receiving objects:  64% (93/145)Receiving objects:  65% (95/145)Receiving objects:  66% (96/145)Receiving objects:  67% (98/145)Receiving objects:  68% (99/145)Receiving objects:  69% (101/145)Receiving objects:  70% (102/145)Receiving objects:  71% (103/145)Receiving objects:  72% (105/145)Receiving objects:  73% (106/145)Receiving objects:  74% (108/145)Receiving objects:  75% (109/145)Receiving objects:  76% (111/145)Receiving objects:  77% (112/145)Receiving objects:  78% (114/145)Receiving objects:  79% (115/145)Receiving objects:  80% (116/145)Receiving objects:  81% (118/145)Receiving objects:  82% (119/145)Receiving objects:  83% (121/145)Receiving objects:  84% (122/145)Receiving objects:  85% (124/145)Receiving objects:  86% (125/145)Receiving objects:  87% (127/145)Receiving objects:  88% (128/145)Receiving objects:  89% (130/145)Receiving objects:  90% (131/145)Receiving objects:  91% (132/145)Receiving objects:  92% (134/145)Receiving objects:  93% (135/145)Receiving objects:  94% (137/145)Receiving objects:  95% (138/145)Receiving objects:  96% (140/145)Receiving objects:  97% (141/145)Receiving objects:  98% (143/145)Receiving objects:  99% (144/145)Receiving objects: 100% (145/145)Receiving objects: 100% (145/145), 172.16 KiB | 6.15 MiB/s, done.
-8.9s 23 Resolving deltas:   0% (0/40)Resolving deltas:   2% (1/40)Resolving deltas:   5% (2/40)Resolving deltas:   7% (3/40)Resolving deltas:  10% (4/40)Resolving deltas:  15% (6/40)Resolving deltas:  17% (7/40)Resolving deltas:  20% (8/40)Resolving deltas:  22% (9/40)Resolving deltas:  25% (10/40)Resolving deltas:  27% (11/40)Resolving deltas:  30% (12/40)Resolving deltas:  32% (13/40)Resolving deltas:  35% (14/40)Resolving deltas:  37% (15/40)Resolving deltas:  40% (16/40)Resolving deltas:  42% (17/40)Resolving deltas:  45% (18/40)Resolving deltas:  47% (19/40)Resolving deltas:  50% (20/40)Resolving deltas:  52% (21/40)Resolving deltas:  55% (22/40)Resolving deltas:  57% (23/40)Resolving deltas:  60% (24/40)Resolving deltas:  62% (25/40)Resolving deltas:  65% (26/40)Resolving deltas:  67% (27/40)Resolving deltas:  70% (28/40)Resolving deltas:  72% (29/40)Resolving deltas:  75% (30/40)Resolving deltas:  77% (31/40)Resolving deltas:  80% (32/40)Resolving deltas:  82% (33/40)Resolving deltas:  85% (34/40)Resolving deltas:  87% (35/40)Resolving deltas:  90% (36/40)Resolving deltas:  92% (37/40)Resolving deltas:  95% (38/40)Resolving deltas:  97% (39/40)Resolving deltas: 100% (40/40)Resolving deltas: 100% (40/40), done.
-9.0s 24 /kaggle/working/mamba
-9.1s 25 Already up to date.
-24.1s 26 Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
-24.1s 27 Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
-24.1s 28 Friday-WorkingHours-Morning.pcap_ISCX.csv
-24.1s 29 Monday-WorkingHours.pcap_ISCX.csv
-24.1s 30 Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv
-24.1s 31 Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv
-24.1s 32 Tuesday-WorkingHours.pcap_ISCX.csv
-24.1s 33 Wednesday-workingHours.pcap_ISCX.csv
-24.2s 34 NUSW-NB15_features.csv	UNSW-NB15_3.csv		   UNSW_NB15_testing-set.csv
-24.2s 35 UNSW-NB15_1.csv		UNSW-NB15_4.csv		   UNSW_NB15_training-set.csv
-24.2s 36 UNSW-NB15_2.csv		UNSW-NB15_LIST_EVENTS.csv
-28.2s 37 🔍 Detected 2 GPU(s):
-28.5s 38 GPU 0: Tesla T4 (15.6 GB)
-28.5s 39 GPU 1: Tesla T4 (15.6 GB)
-28.5s 40 
-28.5s 41 🚀 Running on 2 GPUs in parallel!
-28.5s 42 GPU 0: Seeds [42, 123]  — CICIDS2017 + UNSW-NB15 (200K samples)
-28.5s 43 GPU 1: Seed  [456]      — CICIDS2017 + UNSW-NB15 (200K samples)
-28.5s 44 ============================================================
-28.5s 45 ✅ GPU 0 started (PID 75) — seeds [42, 123]
-28.5s 46 ✅ GPU 1 started (PID 76) — seed [456]
-28.5s 47 
-28.5s 48 ⏳ Both GPUs training in parallel — live output below:
-28.5s 49 
-33.9s 50 [GPU 0] ======================================================================
-33.9s 51 [GPU 0] COMPREHENSIVE IDS BENCHMARK
-33.9s 52 [GPU 0] ======================================================================
-33.9s 53 [GPU 0] Datasets:  ['CICIDS2017', 'UNSW-NB15']
-33.9s 54 [GPU 0] Models:    ['Mamba', 'LSTM', 'GRU', 'CNN-LSTM']
-33.9s 55 [GPU 0] Seeds:     [42, 123]
-33.9s 56 [GPU 0] Device:    cuda
-33.9s 57 [GPU 0] Epochs:    30
-33.9s 58 [GPU 0] Batch:     128
-33.9s 59 [GPU 0] Seq Len:   50
-33.9s 60 [GPU 0] d_model:   128
-33.9s 61 [GPU 0] n_layers:  2
-33.9s 62 [GPU 0] ======================================================================
-33.9s 63 [GPU 0]
-33.9s 64 [GPU 0] [1/16] Running experiment...
-33.9s 65 [GPU 0]
-33.9s 66 [GPU 0] ======================================================================
-33.9s 67 [GPU 0]   Dataset: CICIDS2017 | Model: Mamba | Seed: 42
-33.9s 68 [GPU 0] ======================================================================
-33.9s 69 [GPU 0] [Reproducibility] Setting all random seeds to 42
-33.9s 70 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-33.9s 71 [GPU 0] [1/5] Loading CICIDS2017 dataset...
-33.9s 72 [GPU 0] [TRAIN] No cache found, parsing CSVs (this only happens once)...
-33.9s 73 [GPU 0] [TRAIN] Loading CICIDS2017 (4 files)...
-33.9s 74 [GPU 0] Files: ['Monday-WorkingHours.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv', 'Friday-WorkingHours-Morning.pcap_ISCX.csv']
-33.9s 75 [GPU 0]  -> Processing Monday-WorkingHours.pcap_ISCX.csv...
-34.0s 76 [GPU 1] ======================================================================
-34.0s 77 [GPU 1] COMPREHENSIVE IDS BENCHMARK
-34.0s 78 [GPU 1] ======================================================================
-34.0s 79 [GPU 1] Datasets:  ['CICIDS2017', 'UNSW-NB15']
-34.0s 80 [GPU 1] Models:    ['Mamba', 'LSTM', 'GRU', 'CNN-LSTM']
-34.0s 81 [GPU 1] Seeds:     [456]
-34.0s 82 [GPU 1] Device:    cuda
-34.0s 83 [GPU 1] Epochs:    30
-34.0s 84 [GPU 1] Batch:     128
-34.0s 85 [GPU 1] Seq Len:   50
-34.0s 86 [GPU 1] d_model:   128
-34.0s 87 [GPU 1] n_layers:  2
-34.0s 88 [GPU 1] ======================================================================
-34.0s 89 [GPU 1]
-34.0s 90 [GPU 1] [1/8] Running experiment...
-34.0s 91 [GPU 1]
-34.0s 92 [GPU 1] ======================================================================
-34.0s 93 [GPU 1]   Dataset: CICIDS2017 | Model: Mamba | Seed: 456
-34.0s 94 [GPU 1] ======================================================================
-34.0s 95 [GPU 1] [Reproducibility] Setting all random seeds to 456
-34.0s 96 [GPU 1] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-34.0s 97 [GPU 1] [1/5] Loading CICIDS2017 dataset...
-34.0s 98 [GPU 1] [TRAIN] No cache found, parsing CSVs (this only happens once)...
-34.0s 99 [GPU 1] [TRAIN] Loading CICIDS2017 (4 files)...
-34.0s 100 [GPU 1] Files: ['Monday-WorkingHours.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv', 'Friday-WorkingHours-Morning.pcap_ISCX.csv']
-34.0s 101 [GPU 1]  -> Processing Monday-WorkingHours.pcap_ISCX.csv...
-39.7s 102 [GPU 1]  -> Processing Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv...
-39.8s 103 [GPU 0]  -> Processing Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv...
-42.2s 104 [GPU 1]  -> Processing Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv...
-42.4s 105 [GPU 0]  -> Processing Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv...
-44.8s 106 [GPU 1]  -> Processing Friday-WorkingHours-Morning.pcap_ISCX.csv...
-45.1s 107 [GPU 0]  -> Processing Friday-WorkingHours-Morning.pcap_ISCX.csv...
-46.8s 108 [GPU 1] Concatenating chunks...
-47.1s 109 [GPU 1] Loaded 1233163 total rows.
-47.1s 110 [GPU 1] Processing Labels...
-47.2s 111 [GPU 0] Concatenating chunks...
-47.5s 112 [GPU 0] Loaded 1233163 total rows.
-47.5s 113 [GPU 0] Processing Labels...
-47.6s 114 [GPU 1] Class Distribution: Benign=944240, Attack=288923
-47.9s 115 [GPU 1] Converting to numpy arrays...
-48.0s 116 [GPU 0] Class Distribution: Benign=944240, Attack=288923
-48.2s 117 [GPU 1] Cleaning NaN/Inf values...
-48.3s 118 [GPU 0] Converting to numpy arrays...
-48.4s 119 [GPU 1] Total samples: 1233163
-48.4s 120 [GPU 1] Train: 0-863214, Val: 863214-986530, Test: 986530-1233163
-48.5s 121 [GPU 1] Saving cache to outputs/cache/cicids2017_train.npz...
-48.6s 122 [GPU 0] Cleaning NaN/Inf values...
-48.8s 123 [GPU 0] Total samples: 1233163
-48.8s 124 [GPU 0] Train: 0-863214, Val: 863214-986530, Test: 986530-1233163
-48.8s 125 [GPU 0] Saving cache to outputs/cache/cicids2017_train.npz...
-59.1s 126 [GPU 1] [TRAIN] Raw shape (before windowing): (863214, 77)
-59.1s 127 [GPU 1] [TRAIN] Raw shape (before windowing): (863214, 77)
-59.1s 128 [GPU 1] Fitting StandardScaler on Train split...
-59.3s 129 [GPU 0] [TRAIN] Raw shape (before windowing): (863214, 77)
-59.3s 130 [GPU 0] [TRAIN] Raw shape (before windowing): (863214, 77)
-59.3s 131 [GPU 0] Fitting StandardScaler on Train split...
-59.8s 132 [GPU 1] Saved scaler to outputs/scaler_cicids.pkl
-59.8s 133 [GPU 1] [OK] Will generate 863165 windows lazily during training
-59.8s 134 [GPU 1] [VAL] No cache found, parsing CSVs (this only happens once)...
-59.8s 135 [GPU 1] [VAL] Loading CICIDS2017 (4 files)...
-59.8s 136 [GPU 1] Files: ['Monday-WorkingHours.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv', 'Friday-WorkingHours-Morning.pcap_ISCX.csv']
-59.8s 137 [GPU 1]  -> Processing Monday-WorkingHours.pcap_ISCX.csv...
-60.1s 138 [GPU 0] Saved scaler to outputs/scaler_cicids.pkl
-60.1s 139 [GPU 0] [OK] Will generate 863165 windows lazily during training
-60.1s 140 [GPU 0] [VAL] No cache found, parsing CSVs (this only happens once)...
-60.1s 141 [GPU 0] [VAL] Loading CICIDS2017 (4 files)...
-60.1s 142 [GPU 0] Files: ['Monday-WorkingHours.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv', 'Friday-WorkingHours-Morning.pcap_ISCX.csv']
-60.1s 143 [GPU 0]  -> Processing Monday-WorkingHours.pcap_ISCX.csv...
-65.3s 144 [GPU 1]  -> Processing Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv...
-65.6s 145 [GPU 0]  -> Processing Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv...
-67.6s 146 [GPU 1]  -> Processing Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv...
-68.1s 147 [GPU 0]  -> Processing Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv...
-70.2s 148 [GPU 1]  -> Processing Friday-WorkingHours-Morning.pcap_ISCX.csv...
-70.6s 149 [GPU 0]  -> Processing Friday-WorkingHours-Morning.pcap_ISCX.csv...
-72.3s 150 [GPU 1] Concatenating chunks...
-72.6s 151 [GPU 1] Loaded 1233163 total rows.
-72.6s 152 [GPU 1] Processing Labels...
-72.7s 153 [GPU 0] Concatenating chunks...
-73.0s 154 [GPU 0] Loaded 1233163 total rows.
-73.0s 155 [GPU 0] Processing Labels...
-73.1s 156 [GPU 1] Class Distribution: Benign=944240, Attack=288923
-73.4s 157 [GPU 1] Converting to numpy arrays...
-73.6s 158 [GPU 0] Class Distribution: Benign=944240, Attack=288923
-73.7s 159 [GPU 1] Cleaning NaN/Inf values...
-73.9s 160 [GPU 0] Converting to numpy arrays...
-73.9s 161 [GPU 1] Total samples: 1233163
-73.9s 162 [GPU 1] Train: 0-863214, Val: 863214-986530, Test: 986530-1233163
-74.0s 163 [GPU 1] Saving cache to outputs/cache/cicids2017_val.npz...
-74.1s 164 [GPU 0] Cleaning NaN/Inf values...
-74.3s 165 [GPU 0] Total samples: 1233163
-74.3s 166 [GPU 0] Train: 0-863214, Val: 863214-986530, Test: 986530-1233163
-74.3s 167 [GPU 0] Saving cache to outputs/cache/cicids2017_val.npz...
-74.5s 168 [GPU 1] [VAL] Raw shape (before windowing): (123316, 77)
-74.5s 169 [GPU 1] [VAL] Raw shape (before windowing): (123316, 77)
-74.5s 170 [GPU 1] Loading scaler from outputs/scaler_cicids.pkl...
-74.5s 171 [GPU 1] [OK] Will generate 123267 windows lazily during training
-74.6s 172 [GPU 1] [TEST] No cache found, parsing CSVs (this only happens once)...
-74.6s 173 [GPU 1] [TEST] Loading CICIDS2017 (4 files)...
-74.6s 174 [GPU 1] Files: ['Monday-WorkingHours.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv', 'Friday-WorkingHours-Morning.pcap_ISCX.csv']
-74.6s 175 [GPU 1]  -> Processing Monday-WorkingHours.pcap_ISCX.csv...
-74.8s 176 [GPU 0] [VAL] Raw shape (before windowing): (123316, 77)
-74.8s 177 [GPU 0] [VAL] Raw shape (before windowing): (123316, 77)
-74.8s 178 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-74.9s 179 [GPU 0] [OK] Will generate 123267 windows lazily during training
-74.9s 180 [GPU 0] [TEST] No cache found, parsing CSVs (this only happens once)...
-74.9s 181 [GPU 0] [TEST] Loading CICIDS2017 (4 files)...
-74.9s 182 [GPU 0] Files: ['Monday-WorkingHours.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv', 'Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv', 'Friday-WorkingHours-Morning.pcap_ISCX.csv']
-74.9s 183 [GPU 0]  -> Processing Monday-WorkingHours.pcap_ISCX.csv...
-80.3s 184 [GPU 1]  -> Processing Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv...
-80.4s 185 [GPU 0]  -> Processing Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv...
-82.8s 186 [GPU 0]  -> Processing Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv...
-83.0s 187 [GPU 1]  -> Processing Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv...
-85.3s 188 [GPU 0]  -> Processing Friday-WorkingHours-Morning.pcap_ISCX.csv...
-85.7s 189 [GPU 1]  -> Processing Friday-WorkingHours-Morning.pcap_ISCX.csv...
-87.2s 190 [GPU 0] Concatenating chunks...
-87.5s 191 [GPU 0] Loaded 1233163 total rows.
-87.5s 192 [GPU 0] Processing Labels...
-87.8s 193 [GPU 1] Concatenating chunks...
-88.0s 194 [GPU 0] Class Distribution: Benign=944240, Attack=288923
-88.1s 195 [GPU 1] Loaded 1233163 total rows.
-88.1s 196 [GPU 1] Processing Labels...
-88.3s 197 [GPU 0] Converting to numpy arrays...
-88.6s 198 [GPU 0] Cleaning NaN/Inf values...
-88.6s 199 [GPU 1] Class Distribution: Benign=944240, Attack=288923
-88.8s 200 [GPU 0] Total samples: 1233163
-88.8s 201 [GPU 0] Train: 0-863214, Val: 863214-986530, Test: 986530-1233163
-88.9s 202 [GPU 0] Saving cache to outputs/cache/cicids2017_test.npz...
-88.9s 203 [GPU 1] Converting to numpy arrays...
-89.2s 204 [GPU 1] Cleaning NaN/Inf values...
-89.3s 205 [GPU 1] Total samples: 1233163
-89.3s 206 [GPU 1] Train: 0-863214, Val: 863214-986530, Test: 986530-1233163
-89.4s 207 [GPU 1] Saving cache to outputs/cache/cicids2017_test.npz...
-91.9s 208 [GPU 0] [TEST] Raw shape (before windowing): (246633, 77)
-91.9s 209 [GPU 0] [TEST] Raw shape (before windowing): (246633, 77)
-91.9s 210 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-92.0s 211 [GPU 0] [OK] Will generate 246584 windows lazily during training
-92.0s 212 [GPU 0]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-92.0s 213 [GPU 0]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-92.0s 214 [GPU 0] [2/5] Initializing Mamba (d_model=128, n_layers=2)...
-92.4s 215 [GPU 0]   Parameters: 387,073
-92.4s 216 [GPU 0] [3/5] Training Mamba...
-92.4s 217 [GPU 0]   LR: 0.000300 (base=0.001 × 0.3 for Mamba), grad_clip=0.5
-92.5s 218 [GPU 1] [TEST] Raw shape (before windowing): (246633, 77)
-92.5s 219 [GPU 1] [TEST] Raw shape (before windowing): (246633, 77)
-92.5s 220 [GPU 1] Loading scaler from outputs/scaler_cicids.pkl...
-92.6s 221 [GPU 1] [OK] Will generate 246584 windows lazily during training
-92.6s 222 [GPU 1]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-92.6s 223 [GPU 1]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-92.6s 224 [GPU 1] [2/5] Initializing Mamba (d_model=128, n_layers=2)...
-92.8s 225 [GPU 1]   Parameters: 387,073
-92.9s 226 [GPU 1] [3/5] Training Mamba...
-92.9s 227 [GPU 1]   LR: 0.000300 (base=0.001 × 0.3 for Mamba), grad_clip=0.5
-97.4s 228 [GPU 1]   Using class-weighted loss (pos_weight=1.00)
-97.4s 229 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-773.0s 230 [GPU 1]   Epoch   1/30 | TrLoss: 0.0830 | VlLoss: 0.0530 | VlAcc: 0.9852 | VlF1: 0.9924 *
-773.1s 231 [GPU 0]   Epoch   1/30 | TrLoss: 0.0621 | VlLoss: 0.1166 | VlAcc: 0.9697 | VlF1: 0.9845 *
-1448.1s 232 [GPU 1]   Epoch   2/30 | TrLoss: 0.0548 | VlLoss: 0.0587 | VlAcc: 0.9879 | VlF1: 0.9937 *
-1448.3s 233 [GPU 0]   Epoch   2/30 | TrLoss: 0.0549 | VlLoss: 0.0934 | VlAcc: 0.9832 | VlF1: 0.9913 *
-2123.1s 234 [GPU 1]   Epoch   3/30 | TrLoss: 0.0360 | VlLoss: 0.0422 | VlAcc: 0.9904 | VlF1: 0.9950 *
-2123.3s 235 [GPU 0]   Epoch   3/30 | TrLoss: 0.0646 | VlLoss: 0.0355 | VlAcc: 0.9910 | VlF1: 0.9953 *
-2798.0s 236 [GPU 1]   Epoch   4/30 | TrLoss: 0.0256 | VlLoss: 0.0290 | VlAcc: 0.9928 | VlF1: 0.9963 *
-2798.2s 237 [GPU 0]   Epoch   4/30 | TrLoss: 0.0118 | VlLoss: 0.0280 | VlAcc: 0.9939 | VlF1: 0.9968 *
-3473.1s 238 [GPU 1]   Epoch   5/30 | TrLoss: 0.0098 | VlLoss: 0.0195 | VlAcc: 0.9939 | VlF1: 0.9968 *
-3473.3s 239 [GPU 0]   Epoch   5/30 | TrLoss: 0.0243 | VlLoss: 0.0697 | VlAcc: 0.9793 | VlF1: 0.9893
-4148.1s 240 [GPU 1]   Epoch   6/30 | TrLoss: 0.0038 | VlLoss: 0.0191 | VlAcc: 0.9955 | VlF1: 0.9977 *
-4148.3s 241 [GPU 0]   Epoch   6/30 | TrLoss: 0.0103 | VlLoss: 0.0451 | VlAcc: 0.9900 | VlF1: 0.9948
-4823.4s 242 [GPU 1]   Epoch   7/30 | TrLoss: 0.0046 | VlLoss: 0.0213 | VlAcc: 0.9965 | VlF1: 0.9982 *
-4823.6s 243 [GPU 0]   Epoch   7/30 | TrLoss: 0.0371 | VlLoss: 0.0277 | VlAcc: 0.9936 | VlF1: 0.9967
-5498.5s 244 [GPU 1]   Epoch   8/30 | TrLoss: 0.0031 | VlLoss: 0.0256 | VlAcc: 0.9941 | VlF1: 0.9969
-5498.7s 245 [GPU 0]   Epoch   8/30 | TrLoss: 0.0032 | VlLoss: 0.0712 | VlAcc: 0.9765 | VlF1: 0.9877
-6173.5s 246 [GPU 1]   Epoch   9/30 | TrLoss: 0.0029 | VlLoss: 0.0239 | VlAcc: 0.9950 | VlF1: 0.9974
-6173.7s 247 [GPU 0]   Epoch   9/30 | TrLoss: 0.0027 | VlLoss: 0.0320 | VlAcc: 0.9924 | VlF1: 0.9961
-6173.7s 248 [GPU 0]   Early stopping at epoch 9 (patience=5)
-6173.7s 249 [GPU 0]   Best Val F1: 0.9968 (9 epochs, 6076.3s)
-6173.7s 250 [GPU 0]   💾 Model saved to: outputs/checkpoints/CICIDS2017_Mamba_seed42.pt
-6173.7s 251 [GPU 0] [4/5] Evaluating on test set...
-6182.7s 252 [GPU 0]   Test Acc: 0.9560 | Prec: 0.6900 | Rec: 0.9197 | F1: 0.7885 | AUC: 0.9742
-6182.7s 253 [GPU 0] [5/5] Measuring efficiency...
-6184.9s 254 [GPU 0]   Latency: 10.78ms | Throughput: 2885/s | Memory: 1.48MB
-6193.9s 255 [GPU 0]   Attack types analyzed: 2
-6193.9s 256 [GPU 0]
-6193.9s 257 [GPU 0] [2/16] Running experiment...
-6193.9s 258 [GPU 0]
-6193.9s 259 [GPU 0] ======================================================================
-6193.9s 260 [GPU 0]   Dataset: CICIDS2017 | Model: LSTM | Seed: 42
-6193.9s 261 [GPU 0] ======================================================================
-6193.9s 262 [GPU 0] [Reproducibility] Setting all random seeds to 42
-6193.9s 263 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-6193.9s 264 [GPU 0] [1/5] Loading CICIDS2017 dataset...
-6193.9s 265 [GPU 0] [TRAIN] Loading from cache: outputs/cache/cicids2017_train.npz
-6195.1s 266 [GPU 0]   Cached shape: (863214, 77), labels: 863214
-6195.1s 267 [GPU 0] [TRAIN] Raw shape (before windowing): (863214, 77)
-6195.1s 268 [GPU 0] Fitting StandardScaler on Train split...
-6196.0s 269 [GPU 0] Saved scaler to outputs/scaler_cicids.pkl
-6196.0s 270 [GPU 0] [OK] Will generate 863165 windows lazily during training
-6196.0s 271 [GPU 0] [VAL] Loading from cache: outputs/cache/cicids2017_val.npz
-6196.1s 272 [GPU 0]   Cached shape: (123316, 77), labels: 123316
-6196.1s 273 [GPU 0] [VAL] Raw shape (before windowing): (123316, 77)
-6196.1s 274 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-6196.2s 275 [GPU 0] [OK] Will generate 123267 windows lazily during training
-6196.2s 276 [GPU 0] [TEST] Loading from cache: outputs/cache/cicids2017_test.npz
-6196.5s 277 [GPU 0]   Cached shape: (246633, 77), labels: 246633
-6196.5s 278 [GPU 0] [TEST] Raw shape (before windowing): (246633, 77)
-6196.5s 279 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-6196.6s 280 [GPU 0] [OK] Will generate 246584 windows lazily during training
-6196.6s 281 [GPU 0]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-6196.6s 282 [GPU 0]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-6196.6s 283 [GPU 0] [2/5] Initializing LSTM (d_model=128, n_layers=2)...
-6196.8s 284 [GPU 0]   Parameters: 423,169
-6196.8s 285 [GPU 0] [3/5] Training LSTM...
-6196.8s 286 [GPU 0]   LR: 0.001000 (base=0.001 × 1.0 for LSTM), grad_clip=1.0
-6196.8s 287 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-6217.4s 288 [GPU 0]   Epoch   1/30 | TrLoss: 0.1139 | VlLoss: 0.2069 | VlAcc: 0.9645 | VlF1: 0.9819 *
-6237.7s 289 [GPU 0]   Epoch   2/30 | TrLoss: 0.1133 | VlLoss: 0.2043 | VlAcc: 0.9645 | VlF1: 0.9819
-6258.0s 290 [GPU 0]   Epoch   3/30 | TrLoss: 0.0867 | VlLoss: 0.2323 | VlAcc: 0.9645 | VlF1: 0.9819
-6278.3s 291 [GPU 0]   Epoch   4/30 | TrLoss: 0.1056 | VlLoss: 0.2176 | VlAcc: 0.9645 | VlF1: 0.9819
-6298.8s 292 [GPU 0]   Epoch   5/30 | TrLoss: 0.1368 | VlLoss: 0.1580 | VlAcc: 0.9646 | VlF1: 0.9820 *
-6319.2s 293 [GPU 0]   Epoch   6/30 | TrLoss: 0.0675 | VlLoss: 0.1703 | VlAcc: 0.9645 | VlF1: 0.9819
-6339.7s 294 [GPU 0]   Epoch   7/30 | TrLoss: 0.0425 | VlLoss: 0.1626 | VlAcc: 0.9651 | VlF1: 0.9822 *
-6360.0s 295 [GPU 0]   Epoch   8/30 | TrLoss: 0.0598 | VlLoss: 0.1764 | VlAcc: 0.9645 | VlF1: 0.9819
-6380.4s 296 [GPU 0]   Epoch   9/30 | TrLoss: 0.1165 | VlLoss: 0.1341 | VlAcc: 0.9646 | VlF1: 0.9820
-6400.8s 297 [GPU 0]   Epoch  10/30 | TrLoss: 0.0287 | VlLoss: 0.0798 | VlAcc: 0.9841 | VlF1: 0.9918 *
-6421.2s 298 [GPU 0]   Epoch  11/30 | TrLoss: 0.0057 | VlLoss: 0.0783 | VlAcc: 0.9891 | VlF1: 0.9944 *
-6441.6s 299 [GPU 0]   Epoch  12/30 | TrLoss: 0.0033 | VlLoss: 0.0195 | VlAcc: 0.9949 | VlF1: 0.9973 *
-6462.1s 300 [GPU 0]   Epoch  13/30 | TrLoss: 0.0018 | VlLoss: 0.0233 | VlAcc: 0.9938 | VlF1: 0.9968
-6482.5s 301 [GPU 0]   Epoch  14/30 | TrLoss: 0.0017 | VlLoss: 0.0248 | VlAcc: 0.9923 | VlF1: 0.9960
-6503.1s 302 [GPU 0]   Epoch  15/30 | TrLoss: 0.0014 | VlLoss: 0.0274 | VlAcc: 0.9926 | VlF1: 0.9962
-6523.4s 303 [GPU 0]   Epoch  16/30 | TrLoss: 0.0014 | VlLoss: 0.0317 | VlAcc: 0.9932 | VlF1: 0.9964
-6543.7s 304 [GPU 0]   Epoch  17/30 | TrLoss: 0.0013 | VlLoss: 0.0355 | VlAcc: 0.9930 | VlF1: 0.9964
-6543.7s 305 [GPU 0]   Early stopping at epoch 17 (patience=5)
-6543.7s 306 [GPU 0]   Best Val F1: 0.9973 (17 epochs, 346.9s)
-6543.7s 307 [GPU 0]   💾 Model saved to: outputs/checkpoints/CICIDS2017_LSTM_seed42.pt
-6543.7s 308 [GPU 0] [4/5] Evaluating on test set...
-6546.3s 309 [GPU 0]   Test Acc: 0.9912 | Prec: 0.9980 | Rec: 0.9031 | F1: 0.9482 | AUC: 0.9929
-6546.3s 310 [GPU 0] [5/5] Measuring efficiency...
-6546.5s 311 [GPU 0]   Latency: 0.79ms | Throughput: 30540/s | Memory: 1.61MB
-6549.1s 312 [GPU 0]   Attack types analyzed: 2
-6549.1s 313 [GPU 0]
-6549.1s 314 [GPU 0] [3/16] Running experiment...
-6549.1s 315 [GPU 0]
-6549.1s 316 [GPU 0] ======================================================================
-6549.1s 317 [GPU 0]   Dataset: CICIDS2017 | Model: GRU | Seed: 42
-6549.1s 318 [GPU 0] ======================================================================
-6549.1s 319 [GPU 0] [Reproducibility] Setting all random seeds to 42
-6549.1s 320 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-6549.1s 321 [GPU 0] [1/5] Loading CICIDS2017 dataset...
-6549.1s 322 [GPU 0] [TRAIN] Loading from cache: outputs/cache/cicids2017_train.npz
-6550.3s 323 [GPU 0]   Cached shape: (863214, 77), labels: 863214
-6550.3s 324 [GPU 0] [TRAIN] Raw shape (before windowing): (863214, 77)
-6550.3s 325 [GPU 0] Fitting StandardScaler on Train split...
-6551.3s 326 [GPU 0] Saved scaler to outputs/scaler_cicids.pkl
-6551.3s 327 [GPU 0] [OK] Will generate 863165 windows lazily during training
-6551.3s 328 [GPU 0] [VAL] Loading from cache: outputs/cache/cicids2017_val.npz
-6551.4s 329 [GPU 0]   Cached shape: (123316, 77), labels: 123316
-6551.4s 330 [GPU 0] [VAL] Raw shape (before windowing): (123316, 77)
-6551.4s 331 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-6551.5s 332 [GPU 0] [OK] Will generate 123267 windows lazily during training
-6551.5s 333 [GPU 0] [TEST] Loading from cache: outputs/cache/cicids2017_test.npz
-6551.8s 334 [GPU 0]   Cached shape: (246633, 77), labels: 246633
-6551.8s 335 [GPU 0] [TEST] Raw shape (before windowing): (246633, 77)
-6551.8s 336 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-6551.9s 337 [GPU 0] [OK] Will generate 246584 windows lazily during training
-6551.9s 338 [GPU 0]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-6551.9s 339 [GPU 0]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-6551.9s 340 [GPU 0] [2/5] Initializing GRU (d_model=128, n_layers=2)...
-6551.9s 341 [GPU 0]   Parameters: 373,505
-6552.0s 342 [GPU 0] [3/5] Training GRU...
-6552.0s 343 [GPU 0]   LR: 0.001000 (base=0.001 × 1.0 for GRU), grad_clip=0.5
-6552.0s 344 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-6569.3s 345 [GPU 0]   Epoch   1/30 | TrLoss: 0.2909 | VlLoss: 0.1885 | VlAcc: 0.9645 | VlF1: 0.9819 *
-6586.5s 346 [GPU 0]   Epoch   2/30 | TrLoss: 0.4081 | VlLoss: 0.1929 | VlAcc: 0.9645 | VlF1: 0.9819
-6603.6s 347 [GPU 0]   Epoch   3/30 | TrLoss: 0.1858 | VlLoss: 0.2011 | VlAcc: 0.9625 | VlF1: 0.9809
-6620.8s 348 [GPU 0]   Epoch   4/30 | TrLoss: 0.1291 | VlLoss: 0.2179 | VlAcc: 0.9645 | VlF1: 0.9819
-6637.8s 349 [GPU 0]   Epoch   5/30 | TrLoss: 0.1273 | VlLoss: 0.1667 | VlAcc: 0.9645 | VlF1: 0.9819
-6655.1s 350 [GPU 0]   Epoch   6/30 | TrLoss: 0.1034 | VlLoss: 0.1293 | VlAcc: 0.9741 | VlF1: 0.9867 *
-6672.2s 351 [GPU 0]   Epoch   7/30 | TrLoss: 0.0132 | VlLoss: 0.1001 | VlAcc: 0.9749 | VlF1: 0.9871 *
-6689.4s 352 [GPU 0]   Epoch   8/30 | TrLoss: 0.0067 | VlLoss: 0.1329 | VlAcc: 0.9614 | VlF1: 0.9799
-6706.3s 353 [GPU 0]   Epoch   9/30 | TrLoss: 0.0056 | VlLoss: 0.0815 | VlAcc: 0.9786 | VlF1: 0.9889 *
-6723.4s 354 [GPU 0]   Epoch  10/30 | TrLoss: 0.0047 | VlLoss: 0.0697 | VlAcc: 0.9847 | VlF1: 0.9921 *
-6740.4s 355 [GPU 0]   Epoch  11/30 | TrLoss: 0.0043 | VlLoss: 0.0625 | VlAcc: 0.9885 | VlF1: 0.9941 *
-6757.5s 356 [GPU 0]   Epoch  12/30 | TrLoss: 0.0030 | VlLoss: 0.0478 | VlAcc: 0.9875 | VlF1: 0.9935
-6774.6s 357 [GPU 0]   Epoch  13/30 | TrLoss: 0.0016 | VlLoss: 0.0212 | VlAcc: 0.9921 | VlF1: 0.9959 *
-6791.6s 358 [GPU 0]   Epoch  14/30 | TrLoss: 0.0013 | VlLoss: 0.0402 | VlAcc: 0.9898 | VlF1: 0.9947
-6808.7s 359 [GPU 0]   Epoch  15/30 | TrLoss: 0.0014 | VlLoss: 0.0261 | VlAcc: 0.9930 | VlF1: 0.9964 *
-6825.8s 360 [GPU 0]   Epoch  16/30 | TrLoss: 0.0020 | VlLoss: 0.0204 | VlAcc: 0.9944 | VlF1: 0.9971 *
-6842.9s 361 [GPU 0]   Epoch  17/30 | TrLoss: 0.0008 | VlLoss: 0.0192 | VlAcc: 0.9956 | VlF1: 0.9977 *
-6848.5s 362 [GPU 1]   Epoch  10/30 | TrLoss: 0.0021 | VlLoss: 0.0186 | VlAcc: 0.9968 | VlF1: 0.9983 *
-6860.1s 363 [GPU 0]   Epoch  18/30 | TrLoss: 0.0011 | VlLoss: 0.0380 | VlAcc: 0.9907 | VlF1: 0.9951
-6877.2s 364 [GPU 0]   Epoch  19/30 | TrLoss: 0.0007 | VlLoss: 0.0483 | VlAcc: 0.9904 | VlF1: 0.9950
-6894.4s 365 [GPU 0]   Epoch  20/30 | TrLoss: 0.0008 | VlLoss: 0.0675 | VlAcc: 0.9839 | VlF1: 0.9916
-6911.6s 366 [GPU 0]   Epoch  21/30 | TrLoss: 0.0008 | VlLoss: 0.0381 | VlAcc: 0.9916 | VlF1: 0.9956
-6928.7s 367 [GPU 0]   Epoch  22/30 | TrLoss: 0.0006 | VlLoss: 0.0471 | VlAcc: 0.9911 | VlF1: 0.9954
-6928.7s 368 [GPU 0]   Early stopping at epoch 22 (patience=5)
-6928.7s 369 [GPU 0]   Best Val F1: 0.9977 (22 epochs, 376.6s)
-6928.7s 370 [GPU 0]   💾 Model saved to: outputs/checkpoints/CICIDS2017_GRU_seed42.pt
-6928.7s 371 [GPU 0] [4/5] Evaluating on test set...
-6930.9s 372 [GPU 0]   Test Acc: 0.9913 | Prec: 0.9983 | Rec: 0.9040 | F1: 0.9488 | AUC: 0.9884
-6930.9s 373 [GPU 0] [5/5] Measuring efficiency...
-6931.0s 374 [GPU 0]   Latency: 0.55ms | Throughput: 43731/s | Memory: 1.42MB
-6933.3s 375 [GPU 0]   Attack types analyzed: 2
-6933.3s 376 [GPU 0]
-6933.3s 377 [GPU 0] [4/16] Running experiment...
-6933.3s 378 [GPU 0]
-6933.3s 379 [GPU 0] ======================================================================
-6933.3s 380 [GPU 0]   Dataset: CICIDS2017 | Model: CNN-LSTM | Seed: 42
-6933.3s 381 [GPU 0] ======================================================================
-6933.3s 382 [GPU 0] [Reproducibility] Setting all random seeds to 42
-6933.3s 383 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-6933.3s 384 [GPU 0] [1/5] Loading CICIDS2017 dataset...
-6933.3s 385 [GPU 0] [TRAIN] Loading from cache: outputs/cache/cicids2017_train.npz
-6934.5s 386 [GPU 0]   Cached shape: (863214, 77), labels: 863214
-6934.5s 387 [GPU 0] [TRAIN] Raw shape (before windowing): (863214, 77)
-6934.5s 388 [GPU 0] Fitting StandardScaler on Train split...
-6935.5s 389 [GPU 0] Saved scaler to outputs/scaler_cicids.pkl
-6935.5s 390 [GPU 0] [OK] Will generate 863165 windows lazily during training
-6935.5s 391 [GPU 0] [VAL] Loading from cache: outputs/cache/cicids2017_val.npz
-6935.6s 392 [GPU 0]   Cached shape: (123316, 77), labels: 123316
-6935.6s 393 [GPU 0] [VAL] Raw shape (before windowing): (123316, 77)
-6935.6s 394 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-6935.6s 395 [GPU 0] [OK] Will generate 123267 windows lazily during training
-6935.6s 396 [GPU 0] [TEST] Loading from cache: outputs/cache/cicids2017_test.npz
-6936.0s 397 [GPU 0]   Cached shape: (246633, 77), labels: 246633
-6936.0s 398 [GPU 0] [TEST] Raw shape (before windowing): (246633, 77)
-6936.0s 399 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-6936.1s 400 [GPU 0] [OK] Will generate 246584 windows lazily during training
-6936.1s 401 [GPU 0]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-6936.1s 402 [GPU 0]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-6936.1s 403 [GPU 0] [2/5] Initializing CNN-LSTM (d_model=128, n_layers=2)...
-6936.1s 404 [GPU 0]   Parameters: 409,601
-6936.2s 405 [GPU 0] [3/5] Training CNN-LSTM...
-6936.2s 406 [GPU 0]   LR: 0.000500 (base=0.001 × 0.5 for CNN-LSTM), grad_clip=0.5
-6936.2s 407 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-6957.1s 408 [GPU 0]   Epoch   1/30 | TrLoss: 0.1814 | VlLoss: 0.1702 | VlAcc: 0.9645 | VlF1: 0.9819 *
-6977.4s 409 [GPU 0]   Epoch   2/30 | TrLoss: 0.1341 | VlLoss: 0.1535 | VlAcc: 0.9645 | VlF1: 0.9819
-6997.8s 410 [GPU 0]   Epoch   3/30 | TrLoss: 0.0727 | VlLoss: 0.1922 | VlAcc: 0.9645 | VlF1: 0.9819
-7018.5s 411 [GPU 0]   Epoch   4/30 | TrLoss: 0.0212 | VlLoss: 0.0792 | VlAcc: 0.9744 | VlF1: 0.9868 *
-7039.2s 412 [GPU 0]   Epoch   5/30 | TrLoss: 0.0073 | VlLoss: 0.0577 | VlAcc: 0.9764 | VlF1: 0.9878 *
-7059.8s 413 [GPU 0]   Epoch   6/30 | TrLoss: 0.0047 | VlLoss: 0.0390 | VlAcc: 0.9886 | VlF1: 0.9941 *
-7080.4s 414 [GPU 0]   Epoch   7/30 | TrLoss: 0.0039 | VlLoss: 0.0308 | VlAcc: 0.9905 | VlF1: 0.9951 *
-7101.0s 415 [GPU 0]   Epoch   8/30 | TrLoss: 0.0037 | VlLoss: 0.0282 | VlAcc: 0.9926 | VlF1: 0.9962 *
-7121.5s 416 [GPU 0]   Epoch   9/30 | TrLoss: 0.0032 | VlLoss: 0.0420 | VlAcc: 0.9912 | VlF1: 0.9954
-7141.8s 417 [GPU 0]   Epoch  10/30 | TrLoss: 0.0023 | VlLoss: 0.0934 | VlAcc: 0.9906 | VlF1: 0.9951
-7162.4s 418 [GPU 0]   Epoch  11/30 | TrLoss: 0.0023 | VlLoss: 0.0180 | VlAcc: 0.9955 | VlF1: 0.9977 *
-7183.1s 419 [GPU 0]   Epoch  12/30 | TrLoss: 0.0022 | VlLoss: 0.4084 | VlAcc: 0.6875 | VlF1: 0.8072
-7203.7s 420 [GPU 0]   Epoch  13/30 | TrLoss: 0.0023 | VlLoss: 0.0256 | VlAcc: 0.9904 | VlF1: 0.9950
-7224.5s 421 [GPU 0]   Epoch  14/30 | TrLoss: 0.0016 | VlLoss: 0.0746 | VlAcc: 0.9823 | VlF1: 0.9908
-7245.1s 422 [GPU 0]   Epoch  15/30 | TrLoss: 0.0017 | VlLoss: 0.0396 | VlAcc: 0.9923 | VlF1: 0.9960
-7265.6s 423 [GPU 0]   Epoch  16/30 | TrLoss: 0.0014 | VlLoss: 0.0465 | VlAcc: 0.9939 | VlF1: 0.9968
-7265.6s 424 [GPU 0]   Early stopping at epoch 16 (patience=5)
-7265.6s 425 [GPU 0]   Best Val F1: 0.9977 (16 epochs, 329.4s)
-7265.6s 426 [GPU 0]   💾 Model saved to: outputs/checkpoints/CICIDS2017_CNN-LSTM_seed42.pt
-7265.6s 427 [GPU 0] [4/5] Evaluating on test set...
-7268.0s 428 [GPU 0]   Test Acc: 0.9533 | Prec: 0.6685 | Rec: 0.9460 | F1: 0.7834 | AUC: 0.9746
-7268.0s 429 [GPU 0] [5/5] Measuring efficiency...
-7268.2s 430 [GPU 0]   Latency: 0.90ms | Throughput: 32823/s | Memory: 1.56MB
-7270.6s 431 [GPU 0]   Attack types analyzed: 2
-7270.6s 432 [GPU 0]
-7270.6s 433 [GPU 0] [5/16] Running experiment...
-7270.6s 434 [GPU 0]
-7270.6s 435 [GPU 0] ======================================================================
-7270.6s 436 [GPU 0]   Dataset: CICIDS2017 | Model: Mamba | Seed: 123
-7270.6s 437 [GPU 0] ======================================================================
-7270.6s 438 [GPU 0] [Reproducibility] Setting all random seeds to 123
-7270.6s 439 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-7270.6s 440 [GPU 0] [1/5] Loading CICIDS2017 dataset...
-7270.6s 441 [GPU 0] [TRAIN] Loading from cache: outputs/cache/cicids2017_train.npz
-7271.8s 442 [GPU 0]   Cached shape: (863214, 77), labels: 863214
-7271.8s 443 [GPU 0] [TRAIN] Raw shape (before windowing): (863214, 77)
-7271.8s 444 [GPU 0] Fitting StandardScaler on Train split...
-7272.8s 445 [GPU 0] Saved scaler to outputs/scaler_cicids.pkl
-7272.8s 446 [GPU 0] [OK] Will generate 863165 windows lazily during training
-7272.8s 447 [GPU 0] [VAL] Loading from cache: outputs/cache/cicids2017_val.npz
-7272.9s 448 [GPU 0]   Cached shape: (123316, 77), labels: 123316
-7272.9s 449 [GPU 0] [VAL] Raw shape (before windowing): (123316, 77)
-7272.9s 450 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-7272.9s 451 [GPU 0] [OK] Will generate 123267 windows lazily during training
-7272.9s 452 [GPU 0] [TEST] Loading from cache: outputs/cache/cicids2017_test.npz
-7273.3s 453 [GPU 0]   Cached shape: (246633, 77), labels: 246633
-7273.3s 454 [GPU 0] [TEST] Raw shape (before windowing): (246633, 77)
-7273.3s 455 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-7273.4s 456 [GPU 0] [OK] Will generate 246584 windows lazily during training
-7273.4s 457 [GPU 0]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-7273.4s 458 [GPU 0]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-7273.4s 459 [GPU 0] [2/5] Initializing Mamba (d_model=128, n_layers=2)...
-7273.4s 460 [GPU 0]   Parameters: 387,073
-7273.5s 461 [GPU 0] [3/5] Training Mamba...
-7273.5s 462 [GPU 0]   LR: 0.000300 (base=0.001 × 0.3 for Mamba), grad_clip=0.5
-7273.5s 463 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-7523.6s 464 [GPU 1]   Epoch  11/30 | TrLoss: 0.0025 | VlLoss: 0.0233 | VlAcc: 0.9966 | VlF1: 0.9982
-7948.3s 465 [GPU 0]   Epoch   1/30 | TrLoss: 0.0682 | VlLoss: 0.1109 | VlAcc: 0.9792 | VlF1: 0.9893 *
-8198.7s 466 [GPU 1]   Epoch  12/30 | TrLoss: 0.0021 | VlLoss: 0.0315 | VlAcc: 0.9956 | VlF1: 0.9977
-8623.4s 467 [GPU 0]   Epoch   2/30 | TrLoss: 0.0245 | VlLoss: 0.1883 | VlAcc: 0.9649 | VlF1: 0.9821
-8873.9s 468 [GPU 1]   Epoch  13/30 | TrLoss: 0.0114 | VlLoss: 0.0381 | VlAcc: 0.9799 | VlF1: 0.9895
-9298.2s 469 [GPU 0]   Epoch   3/30 | TrLoss: 0.0698 | VlLoss: 0.0568 | VlAcc: 0.9904 | VlF1: 0.9950 *
-9548.9s 470 [GPU 1]   Epoch  14/30 | TrLoss: 0.0019 | VlLoss: 0.0262 | VlAcc: 0.9954 | VlF1: 0.9976
-9973.0s 471 [GPU 0]   Epoch   4/30 | TrLoss: 0.0299 | VlLoss: 0.0346 | VlAcc: 0.9902 | VlF1: 0.9949
-10223.8s 472 [GPU 1]   Epoch  15/30 | TrLoss: 0.0013 | VlLoss: 0.0246 | VlAcc: 0.9960 | VlF1: 0.9979
-10223.8s 473 [GPU 1]   Early stopping at epoch 15 (patience=5)
-10223.8s 474 [GPU 1]   Best Val F1: 0.9983 (15 epochs, 10126.4s)
-10223.8s 475 [GPU 1]   💾 Model saved to: outputs/checkpoints/CICIDS2017_Mamba_seed456.pt
-10223.8s 476 [GPU 1] [4/5] Evaluating on test set...
-10232.8s 477 [GPU 1]   Test Acc: 0.9911 | Prec: 0.9993 | Rec: 0.9004 | F1: 0.9473 | AUC: 0.9840
-10232.8s 478 [GPU 1] [5/5] Measuring efficiency...
-10235.1s 479 [GPU 1]   Latency: 11.10ms | Throughput: 2815/s | Memory: 1.48MB
-10244.0s 480 [GPU 1]   Attack types analyzed: 2
-10244.1s 481 [GPU 1]
-10244.1s 482 [GPU 1] [2/8] Running experiment...
-10244.1s 483 [GPU 1]
-10244.1s 484 [GPU 1] ======================================================================
-10244.1s 485 [GPU 1]   Dataset: CICIDS2017 | Model: LSTM | Seed: 456
-10244.1s 486 [GPU 1] ======================================================================
-10244.1s 487 [GPU 1] [Reproducibility] Setting all random seeds to 456
-10244.1s 488 [GPU 1] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-10244.1s 489 [GPU 1] [1/5] Loading CICIDS2017 dataset...
-10244.1s 490 [GPU 1] [TRAIN] Loading from cache: outputs/cache/cicids2017_train.npz
-10245.2s 491 [GPU 1]   Cached shape: (863214, 77), labels: 863214
-10245.2s 492 [GPU 1] [TRAIN] Raw shape (before windowing): (863214, 77)
-10245.2s 493 [GPU 1] Fitting StandardScaler on Train split...
-10246.2s 494 [GPU 1] Saved scaler to outputs/scaler_cicids.pkl
-10246.2s 495 [GPU 1] [OK] Will generate 863165 windows lazily during training
-10246.2s 496 [GPU 1] [VAL] Loading from cache: outputs/cache/cicids2017_val.npz
-10246.3s 497 [GPU 1]   Cached shape: (123316, 77), labels: 123316
-10246.3s 498 [GPU 1] [VAL] Raw shape (before windowing): (123316, 77)
-10246.3s 499 [GPU 1] Loading scaler from outputs/scaler_cicids.pkl...
-10246.4s 500 [GPU 1] [OK] Will generate 123267 windows lazily during training
-10246.4s 501 [GPU 1] [TEST] Loading from cache: outputs/cache/cicids2017_test.npz
-10246.7s 502 [GPU 1]   Cached shape: (246633, 77), labels: 246633
-10246.7s 503 [GPU 1] [TEST] Raw shape (before windowing): (246633, 77)
-10246.7s 504 [GPU 1] Loading scaler from outputs/scaler_cicids.pkl...
-10246.9s 505 [GPU 1] [OK] Will generate 246584 windows lazily during training
-10246.9s 506 [GPU 1]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-10246.9s 507 [GPU 1]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-10246.9s 508 [GPU 1] [2/5] Initializing LSTM (d_model=128, n_layers=2)...
-10246.9s 509 [GPU 1]   Parameters: 423,169
-10247.0s 510 [GPU 1] [3/5] Training LSTM...
-10247.0s 511 [GPU 1]   LR: 0.001000 (base=0.001 × 1.0 for LSTM), grad_clip=1.0
-10247.0s 512 [GPU 1]   Using class-weighted loss (pos_weight=1.00)
-10267.3s 513 [GPU 1]   Epoch   1/30 | TrLoss: 0.0771 | VlLoss: 0.2076 | VlAcc: 0.9645 | VlF1: 0.9819 *
-10287.6s 514 [GPU 1]   Epoch   2/30 | TrLoss: 0.1070 | VlLoss: 0.2407 | VlAcc: 0.9645 | VlF1: 0.9819
-10307.9s 515 [GPU 1]   Epoch   3/30 | TrLoss: 0.1119 | VlLoss: 0.2318 | VlAcc: 0.9645 | VlF1: 0.9819
-10328.3s 516 [GPU 1]   Epoch   4/30 | TrLoss: 0.0934 | VlLoss: 0.1905 | VlAcc: 0.9645 | VlF1: 0.9819
-10348.6s 517 [GPU 1]   Epoch   5/30 | TrLoss: 0.1453 | VlLoss: 0.1875 | VlAcc: 0.9645 | VlF1: 0.9819
-10368.8s 518 [GPU 1]   Epoch   6/30 | TrLoss: 0.1273 | VlLoss: 0.2071 | VlAcc: 0.9645 | VlF1: 0.9819
-10368.8s 519 [GPU 1]   Early stopping at epoch 6 (patience=5)
-10368.8s 520 [GPU 1]   Best Val F1: 0.9819 (6 epochs, 121.9s)
-10368.8s 521 [GPU 1]   💾 Model saved to: outputs/checkpoints/CICIDS2017_LSTM_seed456.pt
-10368.8s 522 [GPU 1] [4/5] Evaluating on test set...
-10371.4s 523 [GPU 1]   Test Acc: 0.0892 | Prec: 0.0892 | Rec: 1.0000 | F1: 0.1638 | AUC: 0.4379
-10371.4s 524 [GPU 1] [5/5] Measuring efficiency...
-10371.6s 525 [GPU 1]   Latency: 0.80ms | Throughput: 30652/s | Memory: 1.61MB
-10374.2s 526 [GPU 1]   Attack types analyzed: 2
-10374.2s 527 [GPU 1]
-10374.2s 528 [GPU 1] [3/8] Running experiment...
-10374.2s 529 [GPU 1]
-10374.2s 530 [GPU 1] ======================================================================
-10374.2s 531 [GPU 1]   Dataset: CICIDS2017 | Model: GRU | Seed: 456
-10374.2s 532 [GPU 1] ======================================================================
-10374.2s 533 [GPU 1] [Reproducibility] Setting all random seeds to 456
-10374.2s 534 [GPU 1] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-10374.2s 535 [GPU 1] [1/5] Loading CICIDS2017 dataset...
-10374.2s 536 [GPU 1] [TRAIN] Loading from cache: outputs/cache/cicids2017_train.npz
-10375.4s 537 [GPU 1]   Cached shape: (863214, 77), labels: 863214
-10375.4s 538 [GPU 1] [TRAIN] Raw shape (before windowing): (863214, 77)
-10375.4s 539 [GPU 1] Fitting StandardScaler on Train split...
-10376.3s 540 [GPU 1] Saved scaler to outputs/scaler_cicids.pkl
-10376.3s 541 [GPU 1] [OK] Will generate 863165 windows lazily during training
-10376.3s 542 [GPU 1] [VAL] Loading from cache: outputs/cache/cicids2017_val.npz
-10376.4s 543 [GPU 1]   Cached shape: (123316, 77), labels: 123316
-10376.4s 544 [GPU 1] [VAL] Raw shape (before windowing): (123316, 77)
-10376.4s 545 [GPU 1] Loading scaler from outputs/scaler_cicids.pkl...
-10376.5s 546 [GPU 1] [OK] Will generate 123267 windows lazily during training
-10376.5s 547 [GPU 1] [TEST] Loading from cache: outputs/cache/cicids2017_test.npz
-10376.8s 548 [GPU 1]   Cached shape: (246633, 77), labels: 246633
-10376.8s 549 [GPU 1] [TEST] Raw shape (before windowing): (246633, 77)
-10376.8s 550 [GPU 1] Loading scaler from outputs/scaler_cicids.pkl...
-10376.9s 551 [GPU 1] [OK] Will generate 246584 windows lazily during training
-10376.9s 552 [GPU 1]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-10376.9s 553 [GPU 1]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-10376.9s 554 [GPU 1] [2/5] Initializing GRU (d_model=128, n_layers=2)...
-10376.9s 555 [GPU 1]   Parameters: 373,505
-10377.0s 556 [GPU 1] [3/5] Training GRU...
-10377.0s 557 [GPU 1]   LR: 0.001000 (base=0.001 × 1.0 for GRU), grad_clip=0.5
-10377.0s 558 [GPU 1]   Using class-weighted loss (pos_weight=1.00)
-10394.3s 559 [GPU 1]   Epoch   1/30 | TrLoss: 0.1657 | VlLoss: 0.1540 | VlAcc: 0.9645 | VlF1: 0.9819 *
-10411.6s 560 [GPU 1]   Epoch   2/30 | TrLoss: 0.1257 | VlLoss: 0.2087 | VlAcc: 0.9645 | VlF1: 0.9819
-10428.7s 561 [GPU 1]   Epoch   3/30 | TrLoss: 0.1202 | VlLoss: 0.2155 | VlAcc: 0.9645 | VlF1: 0.9819
-10445.9s 562 [GPU 1]   Epoch   4/30 | TrLoss: 0.1330 | VlLoss: 0.2313 | VlAcc: 0.9645 | VlF1: 0.9819
-10463.0s 563 [GPU 1]   Epoch   5/30 | TrLoss: 0.1722 | VlLoss: 0.2010 | VlAcc: 0.9645 | VlF1: 0.9819
-10480.3s 564 [GPU 1]   Epoch   6/30 | TrLoss: 0.1261 | VlLoss: 0.1646 | VlAcc: 0.9645 | VlF1: 0.9819
-10480.3s 565 [GPU 1]   Early stopping at epoch 6 (patience=5)
-10480.3s 566 [GPU 1]   Best Val F1: 0.9819 (6 epochs, 103.2s)
-10480.3s 567 [GPU 1]   💾 Model saved to: outputs/checkpoints/CICIDS2017_GRU_seed456.pt
-10480.3s 568 [GPU 1] [4/5] Evaluating on test set...
-10482.5s 569 [GPU 1]   Test Acc: 0.0892 | Prec: 0.0892 | Rec: 1.0000 | F1: 0.1638 | AUC: 0.2991
-10482.5s 570 [GPU 1] [5/5] Measuring efficiency...
-10482.6s 571 [GPU 1]   Latency: 0.58ms | Throughput: 43926/s | Memory: 1.42MB
-10484.8s 572 [GPU 1]   Attack types analyzed: 2
-10484.8s 573 [GPU 1]
-10484.8s 574 [GPU 1] [4/8] Running experiment...
-10484.8s 575 [GPU 1]
-10484.8s 576 [GPU 1] ======================================================================
-10484.8s 577 [GPU 1]   Dataset: CICIDS2017 | Model: CNN-LSTM | Seed: 456
-10484.8s 578 [GPU 1] ======================================================================
-10484.8s 579 [GPU 1] [Reproducibility] Setting all random seeds to 456
-10484.8s 580 [GPU 1] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-10484.8s 581 [GPU 1] [1/5] Loading CICIDS2017 dataset...
-10484.8s 582 [GPU 1] [TRAIN] Loading from cache: outputs/cache/cicids2017_train.npz
-10485.9s 583 [GPU 1]   Cached shape: (863214, 77), labels: 863214
-10485.9s 584 [GPU 1] [TRAIN] Raw shape (before windowing): (863214, 77)
-10485.9s 585 [GPU 1] Fitting StandardScaler on Train split...
-10486.9s 586 [GPU 1] Saved scaler to outputs/scaler_cicids.pkl
-10486.9s 587 [GPU 1] [OK] Will generate 863165 windows lazily during training
-10486.9s 588 [GPU 1] [VAL] Loading from cache: outputs/cache/cicids2017_val.npz
-10487.0s 589 [GPU 1]   Cached shape: (123316, 77), labels: 123316
-10487.0s 590 [GPU 1] [VAL] Raw shape (before windowing): (123316, 77)
-10487.0s 591 [GPU 1] Loading scaler from outputs/scaler_cicids.pkl...
-10487.1s 592 [GPU 1] [OK] Will generate 123267 windows lazily during training
-10487.1s 593 [GPU 1] [TEST] Loading from cache: outputs/cache/cicids2017_test.npz
-10487.4s 594 [GPU 1]   Cached shape: (246633, 77), labels: 246633
-10487.4s 595 [GPU 1] [TEST] Raw shape (before windowing): (246633, 77)
-10487.4s 596 [GPU 1] Loading scaler from outputs/scaler_cicids.pkl...
-10487.5s 597 [GPU 1] [OK] Will generate 246584 windows lazily during training
-10487.5s 598 [GPU 1]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-10487.5s 599 [GPU 1]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-10487.5s 600 [GPU 1] [2/5] Initializing CNN-LSTM (d_model=128, n_layers=2)...
-10487.5s 601 [GPU 1]   Parameters: 409,601
-10487.6s 602 [GPU 1] [3/5] Training CNN-LSTM...
-10487.6s 603 [GPU 1]   LR: 0.000500 (base=0.001 × 0.5 for CNN-LSTM), grad_clip=0.5
-10487.6s 604 [GPU 1]   Using class-weighted loss (pos_weight=1.00)
-10508.1s 605 [GPU 1]   Epoch   1/30 | TrLoss: 0.2540 | VlLoss: 0.1720 | VlAcc: 0.9645 | VlF1: 0.9819 *
-10528.3s 606 [GPU 1]   Epoch   2/30 | TrLoss: 0.1506 | VlLoss: 0.1412 | VlAcc: 0.9645 | VlF1: 0.9819
-10548.6s 607 [GPU 1]   Epoch   3/30 | TrLoss: 0.1005 | VlLoss: 0.1441 | VlAcc: 0.9649 | VlF1: 0.9821 *
-10569.0s 608 [GPU 1]   Epoch   4/30 | TrLoss: 0.0432 | VlLoss: 0.1432 | VlAcc: 0.9649 | VlF1: 0.9821 *
-10589.4s 609 [GPU 1]   Epoch   5/30 | TrLoss: 0.0113 | VlLoss: 0.1662 | VlAcc: 0.9723 | VlF1: 0.9855 *
-10610.1s 610 [GPU 1]   Epoch   6/30 | TrLoss: 0.0062 | VlLoss: 0.0796 | VlAcc: 0.9822 | VlF1: 0.9908 *
-10630.4s 611 [GPU 1]   Epoch   7/30 | TrLoss: 0.0056 | VlLoss: 0.0594 | VlAcc: 0.9900 | VlF1: 0.9948 *
-10647.8s 612 [GPU 0]   Epoch   5/30 | TrLoss: 0.0073 | VlLoss: 0.0320 | VlAcc: 0.9877 | VlF1: 0.9936
-10650.9s 613 [GPU 1]   Epoch   8/30 | TrLoss: 0.0043 | VlLoss: 0.0449 | VlAcc: 0.9922 | VlF1: 0.9960 *
-10671.4s 614 [GPU 1]   Epoch   9/30 | TrLoss: 0.0035 | VlLoss: 0.0464 | VlAcc: 0.9923 | VlF1: 0.9960 *
-10691.9s 615 [GPU 1]   Epoch  10/30 | TrLoss: 0.0026 | VlLoss: 0.0288 | VlAcc: 0.9925 | VlF1: 0.9961 *
-10712.3s 616 [GPU 1]   Epoch  11/30 | TrLoss: 0.0025 | VlLoss: 0.3548 | VlAcc: 0.7896 | VlF1: 0.8777
-10732.8s 617 [GPU 1]   Epoch  12/30 | TrLoss: 0.0027 | VlLoss: 0.0404 | VlAcc: 0.9903 | VlF1: 0.9949
-10753.2s 618 [GPU 1]   Epoch  13/30 | TrLoss: 0.0025 | VlLoss: 0.0271 | VlAcc: 0.9920 | VlF1: 0.9959
-10773.6s 619 [GPU 1]   Epoch  14/30 | TrLoss: 0.0017 | VlLoss: 0.0442 | VlAcc: 0.9915 | VlF1: 0.9956
-10794.0s 620 [GPU 1]   Epoch  15/30 | TrLoss: 0.0014 | VlLoss: 0.0508 | VlAcc: 0.9900 | VlF1: 0.9948
-10794.0s 621 [GPU 1]   Early stopping at epoch 15 (patience=5)
-10794.0s 622 [GPU 1]   Best Val F1: 0.9961 (15 epochs, 306.4s)
-10794.0s 623 [GPU 1]   💾 Model saved to: outputs/checkpoints/CICIDS2017_CNN-LSTM_seed456.pt
-10794.0s 624 [GPU 1] [4/5] Evaluating on test set...
-10796.3s 625 [GPU 1]   Test Acc: 0.9624 | Prec: 0.7196 | Rec: 0.9478 | F1: 0.8181 | AUC: 0.9698
-10796.3s 626 [GPU 1] [5/5] Measuring efficiency...
-10796.5s 627 [GPU 1]   Latency: 0.94ms | Throughput: 32841/s | Memory: 1.56MB
-10798.8s 628 [GPU 1]   Attack types analyzed: 2
-10798.8s 629 [GPU 1]
-10798.8s 630 [GPU 1] [5/8] Running experiment...
-10798.8s 631 [GPU 1]
-10798.8s 632 [GPU 1] ======================================================================
-10798.8s 633 [GPU 1]   Dataset: UNSW-NB15 | Model: Mamba | Seed: 456
-10798.8s 634 [GPU 1] ======================================================================
-10798.8s 635 [GPU 1] [Reproducibility] Setting all random seeds to 456
-10798.8s 636 [GPU 1] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-10798.8s 637 [GPU 1] [1/5] Loading UNSW-NB15 dataset...
-10798.8s 638 [GPU 1] [TRAIN] Loading UNSW-NB15...
-10798.8s 639 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-10798.8s 640 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-10802.9s 641 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-10807.1s 642 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-10811.1s 643 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-10816.0s 644 [GPU 1] Loaded 2540043 total rows.
-10817.2s 645 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-10838.7s 646 [GPU 1] Total samples: 2540043
-10838.7s 647 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-10841.6s 648 [GPU 1] Saved scaler to outputs/scaler_unswnb15.pkl
-10841.6s 649 [GPU 1] [TRAIN] Raw shape: (1778030, 140)
-10841.6s 650 [GPU 1] [OK] Will generate 1777981 windows lazily
-10841.6s 651 [GPU 1] [VAL] Loading UNSW-NB15...
-10841.6s 652 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-10841.6s 653 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-10845.4s 654 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-10848.9s 655 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-10852.5s 656 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-10857.4s 657 [GPU 1] Loaded 2540043 total rows.
-10858.7s 658 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-10879.9s 659 [GPU 1] Total samples: 2540043
-10879.9s 660 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-10880.2s 661 [GPU 1] [VAL] Raw shape: (254004, 140)
-10880.2s 662 [GPU 1] [OK] Will generate 253955 windows lazily
-10880.2s 663 [GPU 1] [TEST] Loading UNSW-NB15...
-10880.2s 664 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-10880.2s 665 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-10883.9s 666 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-10887.6s 667 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-10891.6s 668 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-10896.5s 669 [GPU 1] Loaded 2540043 total rows.
-10897.8s 670 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-10919.2s 671 [GPU 1] Total samples: 2540043
-10919.2s 672 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-10919.5s 673 [GPU 1] [TEST] Raw shape: (508009, 140)
-10919.5s 674 [GPU 1] [OK] Will generate 507960 windows lazily
-10919.5s 675 [GPU 1]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-10919.5s 676 [GPU 1]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-10919.5s 677 [GPU 1] [2/5] Initializing Mamba (d_model=128, n_layers=2)...
-10919.6s 678 [GPU 1]   Parameters: 403,201
-10919.6s 679 [GPU 1] [3/5] Training Mamba...
-10919.6s 680 [GPU 1]   LR: 0.000300 (base=0.001 × 0.3 for Mamba), grad_clip=0.5
-10919.6s 681 [GPU 1]   Using class-weighted loss (pos_weight=1.00)
-11322.7s 682 [GPU 0]   Epoch   6/30 | TrLoss: 0.0041 | VlLoss: 0.6175 | VlAcc: 0.7836 | VlF1: 0.8737
-11596.4s 683 [GPU 1]   Epoch   1/30 | TrLoss: 0.0086 | VlLoss: 0.0001 | VlAcc: 1.0000 | VlF1: 1.0000 *
-11997.4s 684 [GPU 0]   Epoch   7/30 | TrLoss: 0.0031 | VlLoss: 2.2397 | VlAcc: 0.3558 | VlF1: 0.4986
-12273.0s 685 [GPU 1]   Epoch   2/30 | TrLoss: 0.0001 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-12672.2s 686 [GPU 0]   Epoch   8/30 | TrLoss: 0.0024 | VlLoss: 1.5735 | VlAcc: 0.3887 | VlF1: 0.5362
-12672.2s 687 [GPU 0]   Early stopping at epoch 8 (patience=5)
-12672.2s 688 [GPU 0]   Best Val F1: 0.9950 (8 epochs, 5398.7s)
-12672.2s 689 [GPU 0]   💾 Model saved to: outputs/checkpoints/CICIDS2017_Mamba_seed123.pt
-12672.2s 690 [GPU 0] [4/5] Evaluating on test set...
-12681.0s 691 [GPU 0]   Test Acc: 0.9350 | Prec: 0.5876 | Rec: 0.9090 | F1: 0.7138 | AUC: 0.9697
-12681.0s 692 [GPU 0] [5/5] Measuring efficiency...
-12683.6s 693 [GPU 0]   Latency: 11.43ms | Throughput: 2576/s | Memory: 1.48MB
-12692.4s 694 [GPU 0]   Attack types analyzed: 2
-12692.4s 695 [GPU 0]
-12692.4s 696 [GPU 0] [6/16] Running experiment...
-12692.4s 697 [GPU 0]
-12692.4s 698 [GPU 0] ======================================================================
-12692.4s 699 [GPU 0]   Dataset: CICIDS2017 | Model: LSTM | Seed: 123
-12692.4s 700 [GPU 0] ======================================================================
-12692.4s 701 [GPU 0] [Reproducibility] Setting all random seeds to 123
-12692.4s 702 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-12692.4s 703 [GPU 0] [1/5] Loading CICIDS2017 dataset...
-12692.4s 704 [GPU 0] [TRAIN] Loading from cache: outputs/cache/cicids2017_train.npz
-12693.6s 705 [GPU 0]   Cached shape: (863214, 77), labels: 863214
-12693.6s 706 [GPU 0] [TRAIN] Raw shape (before windowing): (863214, 77)
-12693.6s 707 [GPU 0] Fitting StandardScaler on Train split...
-12694.7s 708 [GPU 0] Saved scaler to outputs/scaler_cicids.pkl
-12694.7s 709 [GPU 0] [OK] Will generate 863165 windows lazily during training
-12694.7s 710 [GPU 0] [VAL] Loading from cache: outputs/cache/cicids2017_val.npz
-12694.8s 711 [GPU 0]   Cached shape: (123316, 77), labels: 123316
-12694.8s 712 [GPU 0] [VAL] Raw shape (before windowing): (123316, 77)
-12694.8s 713 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-12694.8s 714 [GPU 0] [OK] Will generate 123267 windows lazily during training
-12694.8s 715 [GPU 0] [TEST] Loading from cache: outputs/cache/cicids2017_test.npz
-12695.2s 716 [GPU 0]   Cached shape: (246633, 77), labels: 246633
-12695.2s 717 [GPU 0] [TEST] Raw shape (before windowing): (246633, 77)
-12695.2s 718 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-12695.3s 719 [GPU 0] [OK] Will generate 246584 windows lazily during training
-12695.3s 720 [GPU 0]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-12695.3s 721 [GPU 0]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-12695.3s 722 [GPU 0] [2/5] Initializing LSTM (d_model=128, n_layers=2)...
-12695.3s 723 [GPU 0]   Parameters: 423,169
-12695.4s 724 [GPU 0] [3/5] Training LSTM...
-12695.4s 725 [GPU 0]   LR: 0.001000 (base=0.001 × 1.0 for LSTM), grad_clip=1.0
-12695.4s 726 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-12716.1s 727 [GPU 0]   Epoch   1/30 | TrLoss: 0.0890 | VlLoss: 0.2251 | VlAcc: 0.9645 | VlF1: 0.9819 *
-12736.9s 728 [GPU 0]   Epoch   2/30 | TrLoss: 0.1117 | VlLoss: 0.2314 | VlAcc: 0.9645 | VlF1: 0.9819
-12757.3s 729 [GPU 0]   Epoch   3/30 | TrLoss: 0.1109 | VlLoss: 0.2769 | VlAcc: 0.9645 | VlF1: 0.9819
-12778.0s 730 [GPU 0]   Epoch   4/30 | TrLoss: 0.1095 | VlLoss: 0.2341 | VlAcc: 0.9645 | VlF1: 0.9819
-12798.7s 731 [GPU 0]   Epoch   5/30 | TrLoss: 0.1478 | VlLoss: 0.1775 | VlAcc: 0.9645 | VlF1: 0.9819
-12819.5s 732 [GPU 0]   Epoch   6/30 | TrLoss: 0.1217 | VlLoss: 0.1470 | VlAcc: 0.9645 | VlF1: 0.9819
-12819.5s 733 [GPU 0]   Early stopping at epoch 6 (patience=5)
-12819.5s 734 [GPU 0]   Best Val F1: 0.9819 (6 epochs, 124.1s)
-12819.5s 735 [GPU 0]   💾 Model saved to: outputs/checkpoints/CICIDS2017_LSTM_seed123.pt
-12819.5s 736 [GPU 0] [4/5] Evaluating on test set...
-12822.1s 737 [GPU 0]   Test Acc: 0.0892 | Prec: 0.0892 | Rec: 1.0000 | F1: 0.1638 | AUC: 0.6120
-12822.1s 738 [GPU 0] [5/5] Measuring efficiency...
-12822.3s 739 [GPU 0]   Latency: 0.81ms | Throughput: 30479/s | Memory: 1.61MB
-12825.0s 740 [GPU 0]   Attack types analyzed: 2
-12825.0s 741 [GPU 0]
-12825.0s 742 [GPU 0] [7/16] Running experiment...
-12825.0s 743 [GPU 0]
-12825.0s 744 [GPU 0] ======================================================================
-12825.0s 745 [GPU 0]   Dataset: CICIDS2017 | Model: GRU | Seed: 123
-12825.0s 746 [GPU 0] ======================================================================
-12825.0s 747 [GPU 0] [Reproducibility] Setting all random seeds to 123
-12825.0s 748 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-12825.0s 749 [GPU 0] [1/5] Loading CICIDS2017 dataset...
-12825.0s 750 [GPU 0] [TRAIN] Loading from cache: outputs/cache/cicids2017_train.npz
-12826.2s 751 [GPU 0]   Cached shape: (863214, 77), labels: 863214
-12826.2s 752 [GPU 0] [TRAIN] Raw shape (before windowing): (863214, 77)
-12826.2s 753 [GPU 0] Fitting StandardScaler on Train split...
-12827.2s 754 [GPU 0] Saved scaler to outputs/scaler_cicids.pkl
-12827.2s 755 [GPU 0] [OK] Will generate 863165 windows lazily during training
-12827.2s 756 [GPU 0] [VAL] Loading from cache: outputs/cache/cicids2017_val.npz
-12827.3s 757 [GPU 0]   Cached shape: (123316, 77), labels: 123316
-12827.3s 758 [GPU 0] [VAL] Raw shape (before windowing): (123316, 77)
-12827.3s 759 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-12827.4s 760 [GPU 0] [OK] Will generate 123267 windows lazily during training
-12827.4s 761 [GPU 0] [TEST] Loading from cache: outputs/cache/cicids2017_test.npz
-12827.7s 762 [GPU 0]   Cached shape: (246633, 77), labels: 246633
-12827.7s 763 [GPU 0] [TEST] Raw shape (before windowing): (246633, 77)
-12827.7s 764 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-12827.8s 765 [GPU 0] [OK] Will generate 246584 windows lazily during training
-12827.8s 766 [GPU 0]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-12827.8s 767 [GPU 0]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-12827.8s 768 [GPU 0] [2/5] Initializing GRU (d_model=128, n_layers=2)...
-12827.8s 769 [GPU 0]   Parameters: 373,505
-12827.9s 770 [GPU 0] [3/5] Training GRU...
-12827.9s 771 [GPU 0]   LR: 0.001000 (base=0.001 × 1.0 for GRU), grad_clip=0.5
-12827.9s 772 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-12845.3s 773 [GPU 0]   Epoch   1/30 | TrLoss: 0.1609 | VlLoss: 0.1740 | VlAcc: 0.9645 | VlF1: 0.9819 *
-12862.3s 774 [GPU 0]   Epoch   2/30 | TrLoss: 0.1283 | VlLoss: 0.2171 | VlAcc: 0.9645 | VlF1: 0.9819
-12879.7s 775 [GPU 0]   Epoch   3/30 | TrLoss: 0.1253 | VlLoss: 0.2381 | VlAcc: 0.9645 | VlF1: 0.9819
-12897.1s 776 [GPU 0]   Epoch   4/30 | TrLoss: 0.1265 | VlLoss: 0.2214 | VlAcc: 0.9645 | VlF1: 0.9819
-12914.4s 777 [GPU 0]   Epoch   5/30 | TrLoss: 0.1823 | VlLoss: 0.1608 | VlAcc: 0.9645 | VlF1: 0.9819
-12931.9s 778 [GPU 0]   Epoch   6/30 | TrLoss: 0.1205 | VlLoss: 0.2646 | VlAcc: 0.9645 | VlF1: 0.9819
-12931.9s 779 [GPU 0]   Early stopping at epoch 6 (patience=5)
-12931.9s 780 [GPU 0]   Best Val F1: 0.9819 (6 epochs, 104.0s)
-12932.0s 781 [GPU 0]   💾 Model saved to: outputs/checkpoints/CICIDS2017_GRU_seed123.pt
-12932.0s 782 [GPU 0] [4/5] Evaluating on test set...
-12934.3s 783 [GPU 0]   Test Acc: 0.0892 | Prec: 0.0892 | Rec: 1.0000 | F1: 0.1638 | AUC: 0.2927
-12934.3s 784 [GPU 0] [5/5] Measuring efficiency...
-12934.4s 785 [GPU 0]   Latency: 0.57ms | Throughput: 44196/s | Memory: 1.42MB
-12936.7s 786 [GPU 0]   Attack types analyzed: 2
-12936.7s 787 [GPU 0]
-12936.7s 788 [GPU 0] [8/16] Running experiment...
-12936.7s 789 [GPU 0]
-12936.7s 790 [GPU 0] ======================================================================
-12936.7s 791 [GPU 0]   Dataset: CICIDS2017 | Model: CNN-LSTM | Seed: 123
-12936.7s 792 [GPU 0] ======================================================================
-12936.7s 793 [GPU 0] [Reproducibility] Setting all random seeds to 123
-12936.7s 794 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-12936.7s 795 [GPU 0] [1/5] Loading CICIDS2017 dataset...
-12936.7s 796 [GPU 0] [TRAIN] Loading from cache: outputs/cache/cicids2017_train.npz
-12937.9s 797 [GPU 0]   Cached shape: (863214, 77), labels: 863214
-12937.9s 798 [GPU 0] [TRAIN] Raw shape (before windowing): (863214, 77)
-12937.9s 799 [GPU 0] Fitting StandardScaler on Train split...
-12938.8s 800 [GPU 0] Saved scaler to outputs/scaler_cicids.pkl
-12938.8s 801 [GPU 0] [OK] Will generate 863165 windows lazily during training
-12938.8s 802 [GPU 0] [VAL] Loading from cache: outputs/cache/cicids2017_val.npz
-12938.9s 803 [GPU 0]   Cached shape: (123316, 77), labels: 123316
-12938.9s 804 [GPU 0] [VAL] Raw shape (before windowing): (123316, 77)
-12938.9s 805 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-12939.0s 806 [GPU 0] [OK] Will generate 123267 windows lazily during training
-12939.0s 807 [GPU 0] [TEST] Loading from cache: outputs/cache/cicids2017_test.npz
-12939.3s 808 [GPU 0]   Cached shape: (246633, 77), labels: 246633
-12939.3s 809 [GPU 0] [TEST] Raw shape (before windowing): (246633, 77)
-12939.3s 810 [GPU 0] Loading scaler from outputs/scaler_cicids.pkl...
-12939.4s 811 [GPU 0] [OK] Will generate 246584 windows lazily during training
-12939.4s 812 [GPU 0]   Limiting (strided): train 863165 -> 200000, val 123267 -> 25000, test 246584 -> 50000
-12939.4s 813 [GPU 0]   Features: 77, Train: 200000, Val: 25000, Test: 50000
-12939.4s 814 [GPU 0] [2/5] Initializing CNN-LSTM (d_model=128, n_layers=2)...
-12939.4s 815 [GPU 0]   Parameters: 409,601
-12939.5s 816 [GPU 0] [3/5] Training CNN-LSTM...
-12939.5s 817 [GPU 0]   LR: 0.000500 (base=0.001 × 0.5 for CNN-LSTM), grad_clip=0.5
-12939.5s 818 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-12949.7s 819 [GPU 1]   Epoch   3/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-12960.0s 820 [GPU 0]   Epoch   1/30 | TrLoss: 0.2437 | VlLoss: 0.1800 | VlAcc: 0.9645 | VlF1: 0.9819 *
-12980.4s 821 [GPU 0]   Epoch   2/30 | TrLoss: 0.1091 | VlLoss: 0.2013 | VlAcc: 0.9645 | VlF1: 0.9819 *
-13001.0s 822 [GPU 0]   Epoch   3/30 | TrLoss: 0.0890 | VlLoss: 0.1210 | VlAcc: 0.9729 | VlF1: 0.9860 *
-13021.4s 823 [GPU 0]   Epoch   4/30 | TrLoss: 0.0088 | VlLoss: 0.1339 | VlAcc: 0.9683 | VlF1: 0.9838
-13041.8s 824 [GPU 0]   Epoch   5/30 | TrLoss: 0.0074 | VlLoss: 0.0712 | VlAcc: 0.9810 | VlF1: 0.9902 *
-13062.3s 825 [GPU 0]   Epoch   6/30 | TrLoss: 0.0060 | VlLoss: 0.0426 | VlAcc: 0.9911 | VlF1: 0.9954 *
-13082.9s 826 [GPU 0]   Epoch   7/30 | TrLoss: 0.0036 | VlLoss: 0.0497 | VlAcc: 0.9916 | VlF1: 0.9956 *
-13103.3s 827 [GPU 0]   Epoch   8/30 | TrLoss: 0.0131 | VlLoss: 0.0497 | VlAcc: 0.9904 | VlF1: 0.9950
-13123.9s 828 [GPU 0]   Epoch   9/30 | TrLoss: 0.0036 | VlLoss: 0.0337 | VlAcc: 0.9929 | VlF1: 0.9963 *
-13144.5s 829 [GPU 0]   Epoch  10/30 | TrLoss: 0.0030 | VlLoss: 0.0305 | VlAcc: 0.9951 | VlF1: 0.9975 *
-13164.9s 830 [GPU 0]   Epoch  11/30 | TrLoss: 0.0024 | VlLoss: 0.0296 | VlAcc: 0.9951 | VlF1: 0.9975
-13185.3s 831 [GPU 0]   Epoch  12/30 | TrLoss: 0.0020 | VlLoss: 0.8449 | VlAcc: 0.6130 | VlF1: 0.7495
-13205.7s 832 [GPU 0]   Epoch  13/30 | TrLoss: 0.0025 | VlLoss: 0.0205 | VlAcc: 0.9958 | VlF1: 0.9978 *
-13226.3s 833 [GPU 0]   Epoch  14/30 | TrLoss: 0.0017 | VlLoss: 0.1323 | VlAcc: 0.9754 | VlF1: 0.9871
-13246.7s 834 [GPU 0]   Epoch  15/30 | TrLoss: 0.0016 | VlLoss: 0.0499 | VlAcc: 0.9891 | VlF1: 0.9943
-13267.4s 835 [GPU 0]   Epoch  16/30 | TrLoss: 0.0014 | VlLoss: 0.0193 | VlAcc: 0.9953 | VlF1: 0.9976
-13287.7s 836 [GPU 0]   Epoch  17/30 | TrLoss: 0.0013 | VlLoss: 0.0190 | VlAcc: 0.9959 | VlF1: 0.9979 *
-13308.3s 837 [GPU 0]   Epoch  18/30 | TrLoss: 0.0010 | VlLoss: 0.0174 | VlAcc: 0.9954 | VlF1: 0.9976
-13328.8s 838 [GPU 0]   Epoch  19/30 | TrLoss: 0.0008 | VlLoss: 0.0196 | VlAcc: 0.9959 | VlF1: 0.9979 *
-13349.5s 839 [GPU 0]   Epoch  20/30 | TrLoss: 0.0007 | VlLoss: 0.0216 | VlAcc: 0.9956 | VlF1: 0.9977
-13369.9s 840 [GPU 0]   Epoch  21/30 | TrLoss: 0.0005 | VlLoss: 0.0215 | VlAcc: 0.9951 | VlF1: 0.9975
-13390.3s 841 [GPU 0]   Epoch  22/30 | TrLoss: 0.0004 | VlLoss: 0.0316 | VlAcc: 0.9942 | VlF1: 0.9970
-13410.9s 842 [GPU 0]   Epoch  23/30 | TrLoss: 0.0004 | VlLoss: 0.0320 | VlAcc: 0.9950 | VlF1: 0.9974
-13431.3s 843 [GPU 0]   Epoch  24/30 | TrLoss: 0.0003 | VlLoss: 0.0362 | VlAcc: 0.9944 | VlF1: 0.9971
-13431.3s 844 [GPU 0]   Early stopping at epoch 24 (patience=5)
-13431.3s 845 [GPU 0]   Best Val F1: 0.9979 (24 epochs, 491.7s)
-13431.3s 846 [GPU 0]   💾 Model saved to: outputs/checkpoints/CICIDS2017_CNN-LSTM_seed123.pt
-13431.3s 847 [GPU 0] [4/5] Evaluating on test set...
-13433.6s 848 [GPU 0]   Test Acc: 0.9881 | Prec: 0.9269 | Rec: 0.9406 | F1: 0.9337 | AUC: 0.9708
-13433.6s 849 [GPU 0] [5/5] Measuring efficiency...
-13433.8s 850 [GPU 0]   Latency: 0.92ms | Throughput: 33077/s | Memory: 1.56MB
-13436.1s 851 [GPU 0]   Attack types analyzed: 2
-13436.1s 852 [GPU 0]
-13436.1s 853 [GPU 0] [9/16] Running experiment...
-13436.1s 854 [GPU 0]
-13436.1s 855 [GPU 0] ======================================================================
-13436.1s 856 [GPU 0]   Dataset: UNSW-NB15 | Model: Mamba | Seed: 42
-13436.1s 857 [GPU 0] ======================================================================
-13436.1s 858 [GPU 0] [Reproducibility] Setting all random seeds to 42
-13436.1s 859 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-13436.1s 860 [GPU 0] [1/5] Loading UNSW-NB15 dataset...
-13436.1s 861 [GPU 0] [TRAIN] Loading UNSW-NB15...
-13436.1s 862 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-13436.1s 863 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-13440.5s 864 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-13444.8s 865 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-13448.8s 866 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-13453.8s 867 [GPU 0] Loaded 2540043 total rows.
-13455.1s 868 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-13476.6s 869 [GPU 0] Total samples: 2540043
-13476.6s 870 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-13479.4s 871 [GPU 0] Saved scaler to outputs/scaler_unswnb15.pkl
-13479.4s 872 [GPU 0] [TRAIN] Raw shape: (1778030, 140)
-13479.4s 873 [GPU 0] [OK] Will generate 1777981 windows lazily
-13479.4s 874 [GPU 0] [VAL] Loading UNSW-NB15...
-13479.4s 875 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-13479.4s 876 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-13483.2s 877 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-13486.7s 878 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-13490.3s 879 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-13495.0s 880 [GPU 0] Loaded 2540043 total rows.
-13496.4s 881 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-13517.5s 882 [GPU 0] Total samples: 2540043
-13517.5s 883 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-13517.7s 884 [GPU 0] [VAL] Raw shape: (254004, 140)
-13517.7s 885 [GPU 0] [OK] Will generate 253955 windows lazily
-13517.8s 886 [GPU 0] [TEST] Loading UNSW-NB15...
-13517.8s 887 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-13517.8s 888 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-13521.4s 889 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-13525.0s 890 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-13528.6s 891 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-13533.6s 892 [GPU 0] Loaded 2540043 total rows.
-13534.9s 893 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-13556.5s 894 [GPU 0] Total samples: 2540043
-13556.5s 895 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-13557.0s 896 [GPU 0] [TEST] Raw shape: (508009, 140)
-13557.0s 897 [GPU 0] [OK] Will generate 507960 windows lazily
-13557.0s 898 [GPU 0]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-13557.0s 899 [GPU 0]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-13557.0s 900 [GPU 0] [2/5] Initializing Mamba (d_model=128, n_layers=2)...
-13557.0s 901 [GPU 0]   Parameters: 403,201
-13557.1s 902 [GPU 0] [3/5] Training Mamba...
-13557.1s 903 [GPU 0]   LR: 0.000300 (base=0.001 × 0.3 for Mamba), grad_clip=0.5
-13557.1s 904 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-13626.5s 905 [GPU 1]   Epoch   4/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-14233.9s 906 [GPU 0]   Epoch   1/30 | TrLoss: 0.0055 | VlLoss: 0.0001 | VlAcc: 1.0000 | VlF1: 1.0000 *
-14303.4s 907 [GPU 1]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-14910.6s 908 [GPU 0]   Epoch   2/30 | TrLoss: 0.0001 | VlLoss: 0.0001 | VlAcc: 1.0000 | VlF1: 1.0000
-14980.1s 909 [GPU 1]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-14980.1s 910 [GPU 1]   Early stopping at epoch 6 (patience=5)
-14980.1s 911 [GPU 1]   Best Val F1: 1.0000 (6 epochs, 4060.4s)
-14980.1s 912 [GPU 1]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_Mamba_seed456.pt
-14980.1s 913 [GPU 1] [4/5] Evaluating on test set...
-14989.3s 914 [GPU 1]   Test Acc: 0.1337 | Prec: 1.0000 | Rec: 0.1337 | F1: 0.2359 | AUC: 0.0000
-14989.3s 915 [GPU 1] [5/5] Measuring efficiency...
-14991.7s 916 [GPU 1]   Latency: 11.55ms | Throughput: 2581/s | Memory: 1.54MB
-15001.0s 917 [GPU 1]   Attack types analyzed: 1
-15001.0s 918 [GPU 1]
-15001.0s 919 [GPU 1] [6/8] Running experiment...
-15001.0s 920 [GPU 1]
-15001.0s 921 [GPU 1] ======================================================================
-15001.0s 922 [GPU 1]   Dataset: UNSW-NB15 | Model: LSTM | Seed: 456
-15001.0s 923 [GPU 1] ======================================================================
-15001.0s 924 [GPU 1] [Reproducibility] Setting all random seeds to 456
-15001.0s 925 [GPU 1] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-15001.0s 926 [GPU 1] [1/5] Loading UNSW-NB15 dataset...
-15001.0s 927 [GPU 1] [TRAIN] Loading UNSW-NB15...
-15001.0s 928 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-15001.0s 929 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-15004.8s 930 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-15008.4s 931 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-15012.3s 932 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-15017.1s 933 [GPU 1] Loaded 2540043 total rows.
-15018.4s 934 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-15039.9s 935 [GPU 1] Total samples: 2540043
-15039.9s 936 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-15042.9s 937 [GPU 1] Saved scaler to outputs/scaler_unswnb15.pkl
-15042.9s 938 [GPU 1] [TRAIN] Raw shape: (1778030, 140)
-15042.9s 939 [GPU 1] [OK] Will generate 1777981 windows lazily
-15042.9s 940 [GPU 1] [VAL] Loading UNSW-NB15...
-15042.9s 941 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-15042.9s 942 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-15046.5s 943 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-15050.1s 944 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-15054.1s 945 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-15058.9s 946 [GPU 1] Loaded 2540043 total rows.
-15060.3s 947 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-15081.9s 948 [GPU 1] Total samples: 2540043
-15081.9s 949 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-15082.1s 950 [GPU 1] [VAL] Raw shape: (254004, 140)
-15082.1s 951 [GPU 1] [OK] Will generate 253955 windows lazily
-15082.2s 952 [GPU 1] [TEST] Loading UNSW-NB15...
-15082.2s 953 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-15082.2s 954 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-15085.8s 955 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-15090.0s 956 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-15094.1s 957 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-15099.1s 958 [GPU 1] Loaded 2540043 total rows.
-15100.4s 959 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-15121.8s 960 [GPU 1] Total samples: 2540043
-15121.8s 961 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-15122.3s 962 [GPU 1] [TEST] Raw shape: (508009, 140)
-15122.3s 963 [GPU 1] [OK] Will generate 507960 windows lazily
-15122.3s 964 [GPU 1]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-15122.3s 965 [GPU 1]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-15122.3s 966 [GPU 1] [2/5] Initializing LSTM (d_model=128, n_layers=2)...
-15122.3s 967 [GPU 1]   Parameters: 431,233
-15122.4s 968 [GPU 1] [3/5] Training LSTM...
-15122.4s 969 [GPU 1]   LR: 0.001000 (base=0.001 × 1.0 for LSTM), grad_clip=1.0
-15122.4s 970 [GPU 1]   Using class-weighted loss (pos_weight=1.00)
-15144.3s 971 [GPU 1]   Epoch   1/30 | TrLoss: 0.0005 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000 *
-15166.3s 972 [GPU 1]   Epoch   2/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15188.3s 973 [GPU 1]   Epoch   3/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15210.0s 974 [GPU 1]   Epoch   4/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15231.4s 975 [GPU 1]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15253.0s 976 [GPU 1]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15253.0s 977 [GPU 1]   Early stopping at epoch 6 (patience=5)
-15253.0s 978 [GPU 1]   Best Val F1: 1.0000 (6 epochs, 130.7s)
-15253.0s 979 [GPU 1]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_LSTM_seed456.pt
-15253.0s 980 [GPU 1] [4/5] Evaluating on test set...
-15256.0s 981 [GPU 1] /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
-15256.0s 982 [GPU 1]   warnings.warn(
-15256.0s 983 [GPU 1]   Test Acc: 1.0000 | Prec: 1.0000 | Rec: 1.0000 | F1: 1.0000 | AUC: nan
-15256.0s 984 [GPU 1] [5/5] Measuring efficiency...
-15256.2s 985 [GPU 1]   Latency: 0.77ms | Throughput: 30664/s | Memory: 1.65MB
-15259.3s 986 [GPU 1]   Attack types analyzed: 1
-15259.3s 987 [GPU 1]
-15259.3s 988 [GPU 1] [7/8] Running experiment...
-15259.3s 989 [GPU 1]
-15259.3s 990 [GPU 1] ======================================================================
-15259.3s 991 [GPU 1]   Dataset: UNSW-NB15 | Model: GRU | Seed: 456
-15259.3s 992 [GPU 1] ======================================================================
-15259.3s 993 [GPU 1] [Reproducibility] Setting all random seeds to 456
-15259.3s 994 [GPU 1] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-15259.3s 995 [GPU 1] [1/5] Loading UNSW-NB15 dataset...
-15259.3s 996 [GPU 1] [TRAIN] Loading UNSW-NB15...
-15259.3s 997 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-15259.3s 998 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-15262.9s 999 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-15266.6s 1000 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-15270.5s 1001 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-15275.5s 1002 [GPU 1] Loaded 2540043 total rows.
-15276.8s 1003 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-15298.4s 1004 [GPU 1] Total samples: 2540043
-15298.4s 1005 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-15301.4s 1006 [GPU 1] Saved scaler to outputs/scaler_unswnb15.pkl
-15301.4s 1007 [GPU 1] [TRAIN] Raw shape: (1778030, 140)
-15301.4s 1008 [GPU 1] [OK] Will generate 1777981 windows lazily
-15301.4s 1009 [GPU 1] [VAL] Loading UNSW-NB15...
-15301.4s 1010 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-15301.4s 1011 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-15305.1s 1012 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-15308.8s 1013 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-15312.4s 1014 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-15317.3s 1015 [GPU 1] Loaded 2540043 total rows.
-15318.6s 1016 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-15340.2s 1017 [GPU 1] Total samples: 2540043
-15340.2s 1018 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-15340.5s 1019 [GPU 1] [VAL] Raw shape: (254004, 140)
-15340.5s 1020 [GPU 1] [OK] Will generate 253955 windows lazily
-15340.5s 1021 [GPU 1] [TEST] Loading UNSW-NB15...
-15340.5s 1022 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-15340.5s 1023 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-15344.2s 1024 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-15347.8s 1025 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-15351.7s 1026 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-15356.5s 1027 [GPU 1] Loaded 2540043 total rows.
-15357.8s 1028 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-15379.2s 1029 [GPU 1] Total samples: 2540043
-15379.2s 1030 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-15379.6s 1031 [GPU 1] [TEST] Raw shape: (508009, 140)
-15379.6s 1032 [GPU 1] [OK] Will generate 507960 windows lazily
-15379.6s 1033 [GPU 1]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-15379.7s 1034 [GPU 1]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-15379.7s 1035 [GPU 1] [2/5] Initializing GRU (d_model=128, n_layers=2)...
-15379.7s 1036 [GPU 1]   Parameters: 381,569
-15379.7s 1037 [GPU 1] [3/5] Training GRU...
-15379.7s 1038 [GPU 1]   LR: 0.001000 (base=0.001 × 1.0 for GRU), grad_clip=0.5
-15379.7s 1039 [GPU 1]   Using class-weighted loss (pos_weight=1.00)
-15398.1s 1040 [GPU 1]   Epoch   1/30 | TrLoss: 0.0101 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000 *
-15416.8s 1041 [GPU 1]   Epoch   2/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15435.4s 1042 [GPU 1]   Epoch   3/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15454.4s 1043 [GPU 1]   Epoch   4/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15473.5s 1044 [GPU 1]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15492.1s 1045 [GPU 1]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15492.1s 1046 [GPU 1]   Early stopping at epoch 6 (patience=5)
-15492.1s 1047 [GPU 1]   Best Val F1: 1.0000 (6 epochs, 112.4s)
-15492.1s 1048 [GPU 1]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_GRU_seed456.pt
-15492.1s 1049 [GPU 1] [4/5] Evaluating on test set...
-15494.8s 1050 [GPU 1] /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
-15494.8s 1051 [GPU 1]   warnings.warn(
-15494.8s 1052 [GPU 1]   Test Acc: 1.0000 | Prec: 1.0000 | Rec: 1.0000 | F1: 1.0000 | AUC: nan
-15494.8s 1053 [GPU 1] [5/5] Measuring efficiency...
-15495.0s 1054 [GPU 1]   Latency: 0.61ms | Throughput: 44247/s | Memory: 1.46MB
-15497.7s 1055 [GPU 1]   Attack types analyzed: 1
-15497.7s 1056 [GPU 1]
-15497.7s 1057 [GPU 1] [8/8] Running experiment...
-15497.7s 1058 [GPU 1]
-15497.7s 1059 [GPU 1] ======================================================================
-15497.7s 1060 [GPU 1]   Dataset: UNSW-NB15 | Model: CNN-LSTM | Seed: 456
-15497.7s 1061 [GPU 1] ======================================================================
-15497.7s 1062 [GPU 1] [Reproducibility] Setting all random seeds to 456
-15497.7s 1063 [GPU 1] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-15497.7s 1064 [GPU 1] [1/5] Loading UNSW-NB15 dataset...
-15497.7s 1065 [GPU 1] [TRAIN] Loading UNSW-NB15...
-15497.7s 1066 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-15497.7s 1067 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-15501.4s 1068 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-15504.9s 1069 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-15508.4s 1070 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-15513.2s 1071 [GPU 1] Loaded 2540043 total rows.
-15514.5s 1072 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-15535.7s 1073 [GPU 1] Total samples: 2540043
-15535.7s 1074 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-15538.6s 1075 [GPU 1] Saved scaler to outputs/scaler_unswnb15.pkl
-15538.6s 1076 [GPU 1] [TRAIN] Raw shape: (1778030, 140)
-15538.6s 1077 [GPU 1] [OK] Will generate 1777981 windows lazily
-15538.6s 1078 [GPU 1] [VAL] Loading UNSW-NB15...
-15538.6s 1079 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-15538.6s 1080 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-15542.3s 1081 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-15545.9s 1082 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-15549.6s 1083 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-15554.5s 1084 [GPU 1] Loaded 2540043 total rows.
-15555.8s 1085 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-15577.3s 1086 [GPU 1] Total samples: 2540043
-15577.3s 1087 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-15577.6s 1088 [GPU 1] [VAL] Raw shape: (254004, 140)
-15577.6s 1089 [GPU 1] [OK] Will generate 253955 windows lazily
-15577.6s 1090 [GPU 1] [TEST] Loading UNSW-NB15...
-15577.6s 1091 [GPU 1] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-15577.6s 1092 [GPU 1]   -> Processing UNSW-NB15_1.csv...
-15581.2s 1093 [GPU 1]   -> Processing UNSW-NB15_2.csv...
-15585.2s 1094 [GPU 1]   -> Processing UNSW-NB15_3.csv...
-15587.5s 1095 [GPU 0]   Epoch   3/30 | TrLoss: 0.0014 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15589.3s 1096 [GPU 1]   -> Processing UNSW-NB15_4.csv...
-15594.1s 1097 [GPU 1] Loaded 2540043 total rows.
-15595.5s 1098 [GPU 1] Class Distribution: Benign=0, Attack=2540043
-15616.9s 1099 [GPU 1] Total samples: 2540043
-15616.9s 1100 [GPU 1] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-15617.3s 1101 [GPU 1] [TEST] Raw shape: (508009, 140)
-15617.3s 1102 [GPU 1] [OK] Will generate 507960 windows lazily
-15617.3s 1103 [GPU 1]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-15617.3s 1104 [GPU 1]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-15617.3s 1105 [GPU 1] [2/5] Initializing CNN-LSTM (d_model=128, n_layers=2)...
-15617.3s 1106 [GPU 1]   Parameters: 433,793
-15617.4s 1107 [GPU 1] [3/5] Training CNN-LSTM...
-15617.4s 1108 [GPU 1]   LR: 0.000500 (base=0.001 × 0.5 for CNN-LSTM), grad_clip=0.5
-15617.4s 1109 [GPU 1]   Using class-weighted loss (pos_weight=1.00)
-15639.4s 1110 [GPU 1]   Epoch   1/30 | TrLoss: 0.0010 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000 *
-15661.4s 1111 [GPU 1]   Epoch   2/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15683.5s 1112 [GPU 1]   Epoch   3/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15705.2s 1113 [GPU 1]   Epoch   4/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15726.9s 1114 [GPU 1]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15748.8s 1115 [GPU 1]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-15748.8s 1116 [GPU 1]   Early stopping at epoch 6 (patience=5)
-15748.8s 1117 [GPU 1]   Best Val F1: 1.0000 (6 epochs, 131.3s)
-15748.8s 1118 [GPU 1]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_CNN-LSTM_seed456.pt
-15748.8s 1119 [GPU 1] [4/5] Evaluating on test set...
-15751.6s 1120 [GPU 1] /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
-15751.6s 1121 [GPU 1]   warnings.warn(
-15751.6s 1122 [GPU 1]   Test Acc: 1.0000 | Prec: 1.0000 | Rec: 1.0000 | F1: 1.0000 | AUC: nan
-15751.6s 1123 [GPU 1] [5/5] Measuring efficiency...
-15751.8s 1124 [GPU 1]   Latency: 0.91ms | Throughput: 32305/s | Memory: 1.65MB
-15754.7s 1125 [GPU 1]   Attack types analyzed: 1
-15754.7s 1126 [GPU 1]
-15754.7s 1127 [GPU 1]
-15754.7s 1128 [GPU 1] ======================================================================
-15754.7s 1129 [GPU 1] BENCHMARK SUMMARY
-15754.7s 1130 [GPU 1] ======================================================================
-15754.7s 1131 [GPU 1]
-15754.7s 1132 [GPU 1] 📊 CICIDS2017
-15754.7s 1133 [GPU 1] Model                Acc     Prec      Rec       F1      AUC  Lat(ms)     Params
-15754.7s 1134 [GPU 1] -----------------------------------------------------------------------------------
-15754.7s 1135 [GPU 1] Mamba           0.9911  0.9993  0.9004  0.9473  0.9840   11.10     387,073
-15754.7s 1136 [GPU 1] LSTM            0.0892  0.0892  1.0000  0.1638  0.4379    0.80     423,169
-15754.7s 1137 [GPU 1] GRU             0.0892  0.0892  1.0000  0.1638  0.2991    0.58     373,505
-15754.7s 1138 [GPU 1] CNN-LSTM        0.9624  0.7196  0.9478  0.8181  0.9698    0.94     409,601
-15754.7s 1139 [GPU 1]
-15754.7s 1140 [GPU 1] 📊 UNSW-NB15
-15754.7s 1141 [GPU 1] Model                Acc     Prec      Rec       F1      AUC  Lat(ms)     Params
-15754.7s 1142 [GPU 1] -----------------------------------------------------------------------------------
-15754.7s 1143 [GPU 1] Mamba           0.1337  1.0000  0.1337  0.2359  0.0000   11.55     403,201
-15754.7s 1144 [GPU 1] LSTM            1.0000  1.0000  1.0000  1.0000  nan    0.77     431,233
-15754.7s 1145 [GPU 1] GRU             1.0000  1.0000  1.0000  1.0000  nan    0.61     381,569
-15754.7s 1146 [GPU 1] CNN-LSTM        1.0000  1.0000  1.0000  1.0000  nan    0.91     433,793
-15754.7s 1147 [GPU 1]
-15754.7s 1148 [GPU 1] ✅ Results saved to: outputs/benchmark_results/
-15754.7s 1149 [GPU 1]    Run 'python generate_tables.py' to generate publication tables.
-16264.1s 1150 [GPU 0]   Epoch   4/30 | TrLoss: 0.0001 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-16940.5s 1151 [GPU 0]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-17616.9s 1152 [GPU 0]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-17616.9s 1153 [GPU 0]   Early stopping at epoch 6 (patience=5)
-17616.9s 1154 [GPU 0]   Best Val F1: 1.0000 (6 epochs, 4059.8s)
-17616.9s 1155 [GPU 0]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_Mamba_seed42.pt
-17616.9s 1156 [GPU 0] [4/5] Evaluating on test set...
-17626.0s 1157 [GPU 0]   Test Acc: 0.1337 | Prec: 1.0000 | Rec: 0.1337 | F1: 0.2359 | AUC: 0.0000
-17626.0s 1158 [GPU 0] [5/5] Measuring efficiency...
-17628.4s 1159 [GPU 0]   Latency: 11.14ms | Throughput: 2872/s | Memory: 1.54MB
-17637.5s 1160 [GPU 0]   Attack types analyzed: 1
-17637.5s 1161 [GPU 0]
-17637.5s 1162 [GPU 0] [10/16] Running experiment...
-17637.5s 1163 [GPU 0]
-17637.5s 1164 [GPU 0] ======================================================================
-17637.5s 1165 [GPU 0]   Dataset: UNSW-NB15 | Model: LSTM | Seed: 42
-17637.5s 1166 [GPU 0] ======================================================================
-17637.5s 1167 [GPU 0] [Reproducibility] Setting all random seeds to 42
-17637.5s 1168 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-17637.5s 1169 [GPU 0] [1/5] Loading UNSW-NB15 dataset...
-17637.5s 1170 [GPU 0] [TRAIN] Loading UNSW-NB15...
-17637.5s 1171 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-17637.5s 1172 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-17641.0s 1173 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-17644.5s 1174 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-17647.8s 1175 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-17652.2s 1176 [GPU 0] Loaded 2540043 total rows.
-17653.5s 1177 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-17674.5s 1178 [GPU 0] Total samples: 2540043
-17674.5s 1179 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-17677.4s 1180 [GPU 0] Saved scaler to outputs/scaler_unswnb15.pkl
-17677.4s 1181 [GPU 0] [TRAIN] Raw shape: (1778030, 140)
-17677.4s 1182 [GPU 0] [OK] Will generate 1777981 windows lazily
-17677.4s 1183 [GPU 0] [VAL] Loading UNSW-NB15...
-17677.4s 1184 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-17677.4s 1185 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-17680.9s 1186 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-17684.3s 1187 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-17687.8s 1188 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-17692.7s 1189 [GPU 0] Loaded 2540043 total rows.
-17694.0s 1190 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-17715.1s 1191 [GPU 0] Total samples: 2540043
-17715.1s 1192 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-17715.3s 1193 [GPU 0] [VAL] Raw shape: (254004, 140)
-17715.3s 1194 [GPU 0] [OK] Will generate 253955 windows lazily
-17715.3s 1195 [GPU 0] [TEST] Loading UNSW-NB15...
-17715.3s 1196 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-17715.3s 1197 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-17718.9s 1198 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-17722.7s 1199 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-17726.7s 1200 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-17731.5s 1201 [GPU 0] Loaded 2540043 total rows.
-17732.8s 1202 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-17753.9s 1203 [GPU 0] Total samples: 2540043
-17753.9s 1204 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-17754.2s 1205 [GPU 0] [TEST] Raw shape: (508009, 140)
-17754.2s 1206 [GPU 0] [OK] Will generate 507960 windows lazily
-17754.2s 1207 [GPU 0]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-17754.2s 1208 [GPU 0]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-17754.2s 1209 [GPU 0] [2/5] Initializing LSTM (d_model=128, n_layers=2)...
-17754.2s 1210 [GPU 0]   Parameters: 431,233
-17754.3s 1211 [GPU 0] [3/5] Training LSTM...
-17754.3s 1212 [GPU 0]   LR: 0.001000 (base=0.001 × 1.0 for LSTM), grad_clip=1.0
-17754.3s 1213 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-17777.1s 1214 [GPU 0]   Epoch   1/30 | TrLoss: 0.0007 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000 *
-17799.3s 1215 [GPU 0]   Epoch   2/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-17821.0s 1216 [GPU 0]   Epoch   3/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-17842.5s 1217 [GPU 0]   Epoch   4/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-17864.0s 1218 [GPU 0]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-17885.4s 1219 [GPU 0]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-17885.4s 1220 [GPU 0]   Early stopping at epoch 6 (patience=5)
-17885.4s 1221 [GPU 0]   Best Val F1: 1.0000 (6 epochs, 131.0s)
-17885.4s 1222 [GPU 0]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_LSTM_seed42.pt
-17885.4s 1223 [GPU 0] [4/5] Evaluating on test set...
-17888.3s 1224 [GPU 0] /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
-17888.3s 1225 [GPU 0]   warnings.warn(
-17888.3s 1226 [GPU 0]   Test Acc: 1.0000 | Prec: 1.0000 | Rec: 1.0000 | F1: 1.0000 | AUC: nan
-17888.3s 1227 [GPU 0] [5/5] Measuring efficiency...
-17888.6s 1228 [GPU 0]   Latency: 0.78ms | Throughput: 30119/s | Memory: 1.65MB
-17891.6s 1229 [GPU 0]   Attack types analyzed: 1
-17891.6s 1230 [GPU 0]
-17891.6s 1231 [GPU 0] [11/16] Running experiment...
-17891.6s 1232 [GPU 0]
-17891.6s 1233 [GPU 0] ======================================================================
-17891.6s 1234 [GPU 0]   Dataset: UNSW-NB15 | Model: GRU | Seed: 42
-17891.6s 1235 [GPU 0] ======================================================================
-17891.6s 1236 [GPU 0] [Reproducibility] Setting all random seeds to 42
-17891.6s 1237 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-17891.6s 1238 [GPU 0] [1/5] Loading UNSW-NB15 dataset...
-17891.6s 1239 [GPU 0] [TRAIN] Loading UNSW-NB15...
-17891.6s 1240 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-17891.6s 1241 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-17895.2s 1242 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-17898.6s 1243 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-17902.0s 1244 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-17906.9s 1245 [GPU 0] Loaded 2540043 total rows.
-17908.2s 1246 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-17929.4s 1247 [GPU 0] Total samples: 2540043
-17929.4s 1248 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-17932.3s 1249 [GPU 0] Saved scaler to outputs/scaler_unswnb15.pkl
-17932.3s 1250 [GPU 0] [TRAIN] Raw shape: (1778030, 140)
-17932.3s 1251 [GPU 0] [OK] Will generate 1777981 windows lazily
-17932.3s 1252 [GPU 0] [VAL] Loading UNSW-NB15...
-17932.3s 1253 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-17932.3s 1254 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-17935.8s 1255 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-17939.3s 1256 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-17943.3s 1257 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-17948.1s 1258 [GPU 0] Loaded 2540043 total rows.
-17949.5s 1259 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-17970.5s 1260 [GPU 0] Total samples: 2540043
-17970.5s 1261 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-17970.8s 1262 [GPU 0] [VAL] Raw shape: (254004, 140)
-17970.8s 1263 [GPU 0] [OK] Will generate 253955 windows lazily
-17970.8s 1264 [GPU 0] [TEST] Loading UNSW-NB15...
-17970.8s 1265 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-17970.8s 1266 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-17974.3s 1267 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-17978.0s 1268 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-17982.1s 1269 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-17986.9s 1270 [GPU 0] Loaded 2540043 total rows.
-17988.2s 1271 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-18009.4s 1272 [GPU 0] Total samples: 2540043
-18009.4s 1273 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-18009.8s 1274 [GPU 0] [TEST] Raw shape: (508009, 140)
-18009.8s 1275 [GPU 0] [OK] Will generate 507960 windows lazily
-18009.8s 1276 [GPU 0]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-18009.8s 1277 [GPU 0]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-18009.8s 1278 [GPU 0] [2/5] Initializing GRU (d_model=128, n_layers=2)...
-18009.8s 1279 [GPU 0]   Parameters: 381,569
-18009.9s 1280 [GPU 0] [3/5] Training GRU...
-18009.9s 1281 [GPU 0]   LR: 0.001000 (base=0.001 × 1.0 for GRU), grad_clip=0.5
-18009.9s 1282 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-18029.0s 1283 [GPU 0]   Epoch   1/30 | TrLoss: 0.0057 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000 *
-18047.8s 1284 [GPU 0]   Epoch   2/30 | TrLoss: 0.0042 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-18066.3s 1285 [GPU 0]   Epoch   3/30 | TrLoss: 0.0021 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-18084.8s 1286 [GPU 0]   Epoch   4/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-18103.4s 1287 [GPU 0]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-18122.2s 1288 [GPU 0]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-18122.2s 1289 [GPU 0]   Early stopping at epoch 6 (patience=5)
-18122.2s 1290 [GPU 0]   Best Val F1: 1.0000 (6 epochs, 112.3s)
-18122.2s 1291 [GPU 0]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_GRU_seed42.pt
-18122.2s 1292 [GPU 0] [4/5] Evaluating on test set...
-18124.9s 1293 [GPU 0] /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
-18124.9s 1294 [GPU 0]   warnings.warn(
-18124.9s 1295 [GPU 0]   Test Acc: 0.9595 | Prec: 1.0000 | Rec: 0.9595 | F1: 0.9793 | AUC: nan
-18124.9s 1296 [GPU 0] [5/5] Measuring efficiency...
-18125.1s 1297 [GPU 0]   Latency: 0.57ms | Throughput: 43384/s | Memory: 1.46MB
-18127.8s 1298 [GPU 0]   Attack types analyzed: 1
-18127.8s 1299 [GPU 0]
-18127.8s 1300 [GPU 0] [12/16] Running experiment...
-18127.8s 1301 [GPU 0]
-18127.8s 1302 [GPU 0] ======================================================================
-18127.8s 1303 [GPU 0]   Dataset: UNSW-NB15 | Model: CNN-LSTM | Seed: 42
-18127.8s 1304 [GPU 0] ======================================================================
-18127.8s 1305 [GPU 0] [Reproducibility] Setting all random seeds to 42
-18127.8s 1306 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-18127.8s 1307 [GPU 0] [1/5] Loading UNSW-NB15 dataset...
-18127.8s 1308 [GPU 0] [TRAIN] Loading UNSW-NB15...
-18127.8s 1309 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-18127.8s 1310 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-18131.4s 1311 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-18134.8s 1312 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-18138.0s 1313 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-18142.6s 1314 [GPU 0] Loaded 2540043 total rows.
-18143.9s 1315 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-18165.1s 1316 [GPU 0] Total samples: 2540043
-18165.1s 1317 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-18167.9s 1318 [GPU 0] Saved scaler to outputs/scaler_unswnb15.pkl
-18167.9s 1319 [GPU 0] [TRAIN] Raw shape: (1778030, 140)
-18167.9s 1320 [GPU 0] [OK] Will generate 1777981 windows lazily
-18167.9s 1321 [GPU 0] [VAL] Loading UNSW-NB15...
-18167.9s 1322 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-18167.9s 1323 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-18171.4s 1324 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-18174.9s 1325 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-18178.1s 1326 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-18182.9s 1327 [GPU 0] Loaded 2540043 total rows.
-18184.2s 1328 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-18205.2s 1329 [GPU 0] Total samples: 2540043
-18205.2s 1330 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-18205.5s 1331 [GPU 0] [VAL] Raw shape: (254004, 140)
-18205.5s 1332 [GPU 0] [OK] Will generate 253955 windows lazily
-18205.5s 1333 [GPU 0] [TEST] Loading UNSW-NB15...
-18205.5s 1334 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-18205.5s 1335 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-18209.1s 1336 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-18213.1s 1337 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-18217.1s 1338 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-18222.0s 1339 [GPU 0] Loaded 2540043 total rows.
-18223.4s 1340 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-18244.5s 1341 [GPU 0] Total samples: 2540043
-18244.5s 1342 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-18244.8s 1343 [GPU 0] [TEST] Raw shape: (508009, 140)
-18244.8s 1344 [GPU 0] [OK] Will generate 507960 windows lazily
-18244.9s 1345 [GPU 0]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-18244.9s 1346 [GPU 0]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-18244.9s 1347 [GPU 0] [2/5] Initializing CNN-LSTM (d_model=128, n_layers=2)...
-18244.9s 1348 [GPU 0]   Parameters: 433,793
-18244.9s 1349 [GPU 0] [3/5] Training CNN-LSTM...
-18244.9s 1350 [GPU 0]   LR: 0.000500 (base=0.001 × 0.5 for CNN-LSTM), grad_clip=0.5
-18244.9s 1351 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-18267.9s 1352 [GPU 0]   Epoch   1/30 | TrLoss: 0.0014 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000 *
-18290.3s 1353 [GPU 0]   Epoch   2/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-18312.3s 1354 [GPU 0]   Epoch   3/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-18334.7s 1355 [GPU 0]   Epoch   4/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-18356.7s 1356 [GPU 0]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-18378.5s 1357 [GPU 0]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-18378.5s 1358 [GPU 0]   Early stopping at epoch 6 (patience=5)
-18378.5s 1359 [GPU 0]   Best Val F1: 1.0000 (6 epochs, 133.5s)
-18378.5s 1360 [GPU 0]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_CNN-LSTM_seed42.pt
-18378.5s 1361 [GPU 0] [4/5] Evaluating on test set...
-18381.3s 1362 [GPU 0] /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
-18381.3s 1363 [GPU 0]   warnings.warn(
-18381.3s 1364 [GPU 0]   Test Acc: 1.0000 | Prec: 1.0000 | Rec: 1.0000 | F1: 1.0000 | AUC: nan
-18381.3s 1365 [GPU 0] [5/5] Measuring efficiency...
-18381.5s 1366 [GPU 0]   Latency: 0.93ms | Throughput: 31834/s | Memory: 1.65MB
-18384.3s 1367 [GPU 0]   Attack types analyzed: 1
-18384.3s 1368 [GPU 0]
-18384.3s 1369 [GPU 0] [13/16] Running experiment...
-18384.3s 1370 [GPU 0]
-18384.3s 1371 [GPU 0] ======================================================================
-18384.3s 1372 [GPU 0]   Dataset: UNSW-NB15 | Model: Mamba | Seed: 123
-18384.3s 1373 [GPU 0] ======================================================================
-18384.3s 1374 [GPU 0] [Reproducibility] Setting all random seeds to 123
-18384.3s 1375 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-18384.3s 1376 [GPU 0] [1/5] Loading UNSW-NB15 dataset...
-18384.3s 1377 [GPU 0] [TRAIN] Loading UNSW-NB15...
-18384.3s 1378 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-18384.3s 1379 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-18387.8s 1380 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-18391.3s 1381 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-18395.3s 1382 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-18400.2s 1383 [GPU 0] Loaded 2540043 total rows.
-18401.5s 1384 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-18422.5s 1385 [GPU 0] Total samples: 2540043
-18422.5s 1386 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-18425.4s 1387 [GPU 0] Saved scaler to outputs/scaler_unswnb15.pkl
-18425.4s 1388 [GPU 0] [TRAIN] Raw shape: (1778030, 140)
-18425.4s 1389 [GPU 0] [OK] Will generate 1777981 windows lazily
-18425.4s 1390 [GPU 0] [VAL] Loading UNSW-NB15...
-18425.4s 1391 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-18425.4s 1392 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-18428.9s 1393 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-18432.7s 1394 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-18436.7s 1395 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-18441.4s 1396 [GPU 0] Loaded 2540043 total rows.
-18442.7s 1397 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-18463.9s 1398 [GPU 0] Total samples: 2540043
-18463.9s 1399 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-18464.2s 1400 [GPU 0] [VAL] Raw shape: (254004, 140)
-18464.2s 1401 [GPU 0] [OK] Will generate 253955 windows lazily
-18464.2s 1402 [GPU 0] [TEST] Loading UNSW-NB15...
-18464.2s 1403 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-18464.2s 1404 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-18467.7s 1405 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-18471.3s 1406 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-18474.9s 1407 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-18479.7s 1408 [GPU 0] Loaded 2540043 total rows.
-18481.1s 1409 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-18502.1s 1410 [GPU 0] Total samples: 2540043
-18502.1s 1411 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-18502.5s 1412 [GPU 0] [TEST] Raw shape: (508009, 140)
-18502.5s 1413 [GPU 0] [OK] Will generate 507960 windows lazily
-18502.5s 1414 [GPU 0]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-18502.5s 1415 [GPU 0]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-18502.5s 1416 [GPU 0] [2/5] Initializing Mamba (d_model=128, n_layers=2)...
-18502.6s 1417 [GPU 0]   Parameters: 403,201
-18502.6s 1418 [GPU 0] [3/5] Training Mamba...
-18502.6s 1419 [GPU 0]   LR: 0.000300 (base=0.001 × 0.3 for Mamba), grad_clip=0.5
-18502.6s 1420 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-19179.1s 1421 [GPU 0]   Epoch   1/30 | TrLoss: 0.0113 | VlLoss: 0.0001 | VlAcc: 1.0000 | VlF1: 1.0000 *
-19855.5s 1422 [GPU 0]   Epoch   2/30 | TrLoss: 0.0001 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-20531.9s 1423 [GPU 0]   Epoch   3/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-21208.4s 1424 [GPU 0]   Epoch   4/30 | TrLoss: 0.0001 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-21884.9s 1425 [GPU 0]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-22561.3s 1426 [GPU 0]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-22561.3s 1427 [GPU 0]   Early stopping at epoch 6 (patience=5)
-22561.3s 1428 [GPU 0]   Best Val F1: 1.0000 (6 epochs, 4058.6s)
-22561.3s 1429 [GPU 0]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_Mamba_seed123.pt
-22561.3s 1430 [GPU 0] [4/5] Evaluating on test set...
-22570.4s 1431 [GPU 0]   Test Acc: 0.1337 | Prec: 1.0000 | Rec: 0.1337 | F1: 0.2359 | AUC: 0.0000
-22570.4s 1432 [GPU 0] [5/5] Measuring efficiency...
-22572.9s 1433 [GPU 0]   Latency: 11.65ms | Throughput: 2754/s | Memory: 1.54MB
-22582.0s 1434 [GPU 0]   Attack types analyzed: 1
-22582.0s 1435 [GPU 0]
-22582.0s 1436 [GPU 0] [14/16] Running experiment...
-22582.0s 1437 [GPU 0]
-22582.0s 1438 [GPU 0] ======================================================================
-22582.0s 1439 [GPU 0]   Dataset: UNSW-NB15 | Model: LSTM | Seed: 123
-22582.0s 1440 [GPU 0] ======================================================================
-22582.0s 1441 [GPU 0] [Reproducibility] Setting all random seeds to 123
-22582.0s 1442 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-22582.0s 1443 [GPU 0] [1/5] Loading UNSW-NB15 dataset...
-22582.0s 1444 [GPU 0] [TRAIN] Loading UNSW-NB15...
-22582.0s 1445 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-22582.0s 1446 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-22585.6s 1447 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-22589.1s 1448 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-22592.7s 1449 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-22597.6s 1450 [GPU 0] Loaded 2540043 total rows.
-22598.9s 1451 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-22620.2s 1452 [GPU 0] Total samples: 2540043
-22620.2s 1453 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-22623.1s 1454 [GPU 0] Saved scaler to outputs/scaler_unswnb15.pkl
-22623.1s 1455 [GPU 0] [TRAIN] Raw shape: (1778030, 140)
-22623.1s 1456 [GPU 0] [OK] Will generate 1777981 windows lazily
-22623.1s 1457 [GPU 0] [VAL] Loading UNSW-NB15...
-22623.1s 1458 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-22623.1s 1459 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-22626.5s 1460 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-22630.1s 1461 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-22633.9s 1462 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-22638.8s 1463 [GPU 0] Loaded 2540043 total rows.
-22640.1s 1464 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-22661.7s 1465 [GPU 0] Total samples: 2540043
-22661.7s 1466 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-22661.9s 1467 [GPU 0] [VAL] Raw shape: (254004, 140)
-22661.9s 1468 [GPU 0] [OK] Will generate 253955 windows lazily
-22661.9s 1469 [GPU 0] [TEST] Loading UNSW-NB15...
-22661.9s 1470 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-22661.9s 1471 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-22665.6s 1472 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-22669.4s 1473 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-22673.4s 1474 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-22678.1s 1475 [GPU 0] Loaded 2540043 total rows.
-22679.4s 1476 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-22700.4s 1477 [GPU 0] Total samples: 2540043
-22700.4s 1478 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-22700.8s 1479 [GPU 0] [TEST] Raw shape: (508009, 140)
-22700.8s 1480 [GPU 0] [OK] Will generate 507960 windows lazily
-22700.8s 1481 [GPU 0]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-22700.9s 1482 [GPU 0]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-22700.9s 1483 [GPU 0] [2/5] Initializing LSTM (d_model=128, n_layers=2)...
-22700.9s 1484 [GPU 0]   Parameters: 431,233
-22700.9s 1485 [GPU 0] [3/5] Training LSTM...
-22700.9s 1486 [GPU 0]   LR: 0.001000 (base=0.001 × 1.0 for LSTM), grad_clip=1.0
-22700.9s 1487 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-22723.7s 1488 [GPU 0]   Epoch   1/30 | TrLoss: 0.0012 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000 *
-22745.9s 1489 [GPU 0]   Epoch   2/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-22767.7s 1490 [GPU 0]   Epoch   3/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-22789.6s 1491 [GPU 0]   Epoch   4/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-22811.2s 1492 [GPU 0]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-22832.7s 1493 [GPU 0]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-22832.7s 1494 [GPU 0]   Early stopping at epoch 6 (patience=5)
-22832.7s 1495 [GPU 0]   Best Val F1: 1.0000 (6 epochs, 131.7s)
-22832.7s 1496 [GPU 0]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_LSTM_seed123.pt
-22832.7s 1497 [GPU 0] [4/5] Evaluating on test set...
-22835.7s 1498 [GPU 0] /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
-22835.7s 1499 [GPU 0]   warnings.warn(
-22835.7s 1500 [GPU 0]   Test Acc: 1.0000 | Prec: 1.0000 | Rec: 1.0000 | F1: 1.0000 | AUC: nan
-22835.7s 1501 [GPU 0] [5/5] Measuring efficiency...
-22835.9s 1502 [GPU 0]   Latency: 0.77ms | Throughput: 30392/s | Memory: 1.65MB
-22839.0s 1503 [GPU 0]   Attack types analyzed: 1
-22839.0s 1504 [GPU 0]
-22839.0s 1505 [GPU 0] [15/16] Running experiment...
-22839.0s 1506 [GPU 0]
-22839.0s 1507 [GPU 0] ======================================================================
-22839.0s 1508 [GPU 0]   Dataset: UNSW-NB15 | Model: GRU | Seed: 123
-22839.0s 1509 [GPU 0] ======================================================================
-22839.0s 1510 [GPU 0] [Reproducibility] Setting all random seeds to 123
-22839.0s 1511 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-22839.0s 1512 [GPU 0] [1/5] Loading UNSW-NB15 dataset...
-22839.0s 1513 [GPU 0] [TRAIN] Loading UNSW-NB15...
-22839.0s 1514 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-22839.0s 1515 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-22842.6s 1516 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-22846.2s 1517 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-22850.2s 1518 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-22855.0s 1519 [GPU 0] Loaded 2540043 total rows.
-22856.4s 1520 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-22877.4s 1521 [GPU 0] Total samples: 2540043
-22877.4s 1522 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-22880.3s 1523 [GPU 0] Saved scaler to outputs/scaler_unswnb15.pkl
-22880.3s 1524 [GPU 0] [TRAIN] Raw shape: (1778030, 140)
-22880.3s 1525 [GPU 0] [OK] Will generate 1777981 windows lazily
-22880.3s 1526 [GPU 0] [VAL] Loading UNSW-NB15...
-22880.3s 1527 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-22880.3s 1528 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-22883.9s 1529 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-22887.4s 1530 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-22890.9s 1531 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-22895.7s 1532 [GPU 0] Loaded 2540043 total rows.
-22897.0s 1533 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-22918.1s 1534 [GPU 0] Total samples: 2540043
-22918.1s 1535 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-22918.3s 1536 [GPU 0] [VAL] Raw shape: (254004, 140)
-22918.3s 1537 [GPU 0] [OK] Will generate 253955 windows lazily
-22918.3s 1538 [GPU 0] [TEST] Loading UNSW-NB15...
-22918.3s 1539 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-22918.3s 1540 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-22921.9s 1541 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-22925.5s 1542 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-22929.4s 1543 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-22934.3s 1544 [GPU 0] Loaded 2540043 total rows.
-22935.6s 1545 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-22956.9s 1546 [GPU 0] Total samples: 2540043
-22956.9s 1547 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-22957.3s 1548 [GPU 0] [TEST] Raw shape: (508009, 140)
-22957.3s 1549 [GPU 0] [OK] Will generate 507960 windows lazily
-22957.3s 1550 [GPU 0]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-22957.3s 1551 [GPU 0]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-22957.3s 1552 [GPU 0] [2/5] Initializing GRU (d_model=128, n_layers=2)...
-22957.3s 1553 [GPU 0]   Parameters: 381,569
-22957.4s 1554 [GPU 0] [3/5] Training GRU...
-22957.4s 1555 [GPU 0]   LR: 0.001000 (base=0.001 × 1.0 for GRU), grad_clip=0.5
-22957.4s 1556 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-22976.5s 1557 [GPU 0]   Epoch   1/30 | TrLoss: 0.0096 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000 *
-22995.3s 1558 [GPU 0]   Epoch   2/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-23014.0s 1559 [GPU 0]   Epoch   3/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-23032.5s 1560 [GPU 0]   Epoch   4/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-23051.1s 1561 [GPU 0]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-23069.8s 1562 [GPU 0]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-23069.8s 1563 [GPU 0]   Early stopping at epoch 6 (patience=5)
-23069.8s 1564 [GPU 0]   Best Val F1: 1.0000 (6 epochs, 112.4s)
-23069.9s 1565 [GPU 0]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_GRU_seed123.pt
-23069.9s 1566 [GPU 0] [4/5] Evaluating on test set...
-23072.6s 1567 [GPU 0] /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
-23072.6s 1568 [GPU 0]   warnings.warn(
-23072.6s 1569 [GPU 0]   Test Acc: 1.0000 | Prec: 1.0000 | Rec: 1.0000 | F1: 1.0000 | AUC: nan
-23072.6s 1570 [GPU 0] [5/5] Measuring efficiency...
-23072.8s 1571 [GPU 0]   Latency: 0.61ms | Throughput: 43038/s | Memory: 1.46MB
-23075.5s 1572 [GPU 0]   Attack types analyzed: 1
-23075.5s 1573 [GPU 0]
-23075.5s 1574 [GPU 0] [16/16] Running experiment...
-23075.5s 1575 [GPU 0]
-23075.5s 1576 [GPU 0] ======================================================================
-23075.5s 1577 [GPU 0]   Dataset: UNSW-NB15 | Model: CNN-LSTM | Seed: 123
-23075.5s 1578 [GPU 0] ======================================================================
-23075.5s 1579 [GPU 0] [Reproducibility] Setting all random seeds to 123
-23075.5s 1580 [GPU 0] [Reproducibility] [OK] All seeds set and deterministic mode enabled
-23075.5s 1581 [GPU 0] [1/5] Loading UNSW-NB15 dataset...
-23075.5s 1582 [GPU 0] [TRAIN] Loading UNSW-NB15...
-23075.5s 1583 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-23075.5s 1584 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-23079.1s 1585 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-23082.7s 1586 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-23086.6s 1587 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-23091.4s 1588 [GPU 0] Loaded 2540043 total rows.
-23092.7s 1589 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-23113.9s 1590 [GPU 0] Total samples: 2540043
-23113.9s 1591 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-23116.7s 1592 [GPU 0] Saved scaler to outputs/scaler_unswnb15.pkl
-23116.7s 1593 [GPU 0] [TRAIN] Raw shape: (1778030, 140)
-23116.7s 1594 [GPU 0] [OK] Will generate 1777981 windows lazily
-23116.7s 1595 [GPU 0] [VAL] Loading UNSW-NB15...
-23116.7s 1596 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-23116.7s 1597 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-23120.3s 1598 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-23123.8s 1599 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-23127.2s 1600 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-23131.8s 1601 [GPU 0] Loaded 2540043 total rows.
-23133.2s 1602 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-23154.3s 1603 [GPU 0] Total samples: 2540043
-23154.3s 1604 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-23154.5s 1605 [GPU 0] [VAL] Raw shape: (254004, 140)
-23154.5s 1606 [GPU 0] [OK] Will generate 253955 windows lazily
-23154.5s 1607 [GPU 0] [TEST] Loading UNSW-NB15...
-23154.5s 1608 [GPU 0] Files: ['UNSW-NB15_1.csv', 'UNSW-NB15_2.csv', 'UNSW-NB15_3.csv', 'UNSW-NB15_4.csv']
-23154.5s 1609 [GPU 0]   -> Processing UNSW-NB15_1.csv...
-23158.1s 1610 [GPU 0]   -> Processing UNSW-NB15_2.csv...
-23161.7s 1611 [GPU 0]   -> Processing UNSW-NB15_3.csv...
-23165.7s 1612 [GPU 0]   -> Processing UNSW-NB15_4.csv...
-23170.4s 1613 [GPU 0] Loaded 2540043 total rows.
-23171.8s 1614 [GPU 0] Class Distribution: Benign=0, Attack=2540043
-23193.1s 1615 [GPU 0] Total samples: 2540043
-23193.1s 1616 [GPU 0] Train: 0-1778030, Val: 1778030-2032034, Test: 2032034-2540043
-23193.5s 1617 [GPU 0] [TEST] Raw shape: (508009, 140)
-23193.5s 1618 [GPU 0] [OK] Will generate 507960 windows lazily
-23193.5s 1619 [GPU 0]   Limiting (strided): train 1777981 -> 200000, val 253955 -> 25000, test 507960 -> 50000
-23193.5s 1620 [GPU 0]   Features: 140, Train: 200000, Val: 25000, Test: 50000
-23193.5s 1621 [GPU 0] [2/5] Initializing CNN-LSTM (d_model=128, n_layers=2)...
-23193.5s 1622 [GPU 0]   Parameters: 433,793
-23193.6s 1623 [GPU 0] [3/5] Training CNN-LSTM...
-23193.6s 1624 [GPU 0]   LR: 0.000500 (base=0.001 × 0.5 for CNN-LSTM), grad_clip=0.5
-23193.6s 1625 [GPU 0]   Using class-weighted loss (pos_weight=1.00)
-23216.6s 1626 [GPU 0]   Epoch   1/30 | TrLoss: 0.0013 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000 *
-23239.2s 1627 [GPU 0]   Epoch   2/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-23261.4s 1628 [GPU 0]   Epoch   3/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-23283.6s 1629 [GPU 0]   Epoch   4/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-23305.5s 1630 [GPU 0]   Epoch   5/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-23327.3s 1631 [GPU 0]   Epoch   6/30 | TrLoss: 0.0000 | VlLoss: 0.0000 | VlAcc: 1.0000 | VlF1: 1.0000
-23327.3s 1632 [GPU 0]   Early stopping at epoch 6 (patience=5)
-23327.3s 1633 [GPU 0]   Best Val F1: 1.0000 (6 epochs, 133.7s)
-23327.3s 1634 [GPU 0]   💾 Model saved to: outputs/checkpoints/UNSW-NB15_CNN-LSTM_seed123.pt
-23327.3s 1635 [GPU 0] [4/5] Evaluating on test set...
-23330.1s 1636 [GPU 0] /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
-23330.1s 1637 [GPU 0]   warnings.warn(
-23330.1s 1638 [GPU 0]   Test Acc: 1.0000 | Prec: 1.0000 | Rec: 1.0000 | F1: 1.0000 | AUC: nan
-23330.1s 1639 [GPU 0] [5/5] Measuring efficiency...
-23330.3s 1640 [GPU 0]   Latency: 0.89ms | Throughput: 32209/s | Memory: 1.65MB
-23333.2s 1641 [GPU 0]   Attack types analyzed: 1
-23333.2s 1642 [GPU 0]
-23333.2s 1643 [GPU 0]
-23333.2s 1644 [GPU 0] ======================================================================
-23333.2s 1645 [GPU 0] BENCHMARK SUMMARY
-23333.2s 1646 [GPU 0] ======================================================================
-23333.2s 1647 [GPU 0]
-23333.2s 1648 [GPU 0] 📊 CICIDS2017
-23333.2s 1649 [GPU 0] Model                Acc     Prec      Rec       F1      AUC  Lat(ms)     Params
-23333.2s 1650 [GPU 0] -----------------------------------------------------------------------------------
-23333.2s 1651 [GPU 0] Mamba           0.9455  0.6388  0.9143  0.7511  0.9719   11.10     387,073
-23333.2s 1652 [GPU 0] LSTM            0.5402  0.5436  0.9516  0.5560  0.8025    0.80     423,169
-23333.2s 1653 [GPU 0] GRU             0.5403  0.5437  0.9520  0.5563  0.6406    0.56     373,505
-23333.2s 1654 [GPU 0] CNN-LSTM        0.9707  0.7977  0.9433  0.8585  0.9727    0.91     409,601
-23333.2s 1655 [GPU 0]
-23333.2s 1656 [GPU 0] 📊 UNSW-NB15
-23333.2s 1657 [GPU 0] Model                Acc     Prec      Rec       F1      AUC  Lat(ms)     Params
-23333.2s 1658 [GPU 0] -----------------------------------------------------------------------------------
-23333.2s 1659 [GPU 0] Mamba           0.1337  1.0000  0.1337  0.2359  0.0000   11.40     403,201
-23333.2s 1660 [GPU 0] LSTM            1.0000  1.0000  1.0000  1.0000  nan    0.78     431,233
-23333.2s 1661 [GPU 0] GRU             0.9798  1.0000  0.9798  0.9897  nan    0.59     381,569
-23333.2s 1662 [GPU 0] CNN-LSTM        1.0000  1.0000  1.0000  1.0000  nan    0.91     433,793
-23333.2s 1663 [GPU 0]
-23333.2s 1664 [GPU 0] ✅ Results saved to: outputs/benchmark_results/
-23333.2s 1665 [GPU 0]    Run 'python generate_tables.py' to generate publication tables.
-23334.1s 1666 
-23334.1s 1667 ✅ GPU 0 finished (exit=0)
-23334.1s 1668 ✅ GPU 1 finished (exit=0)
-23334.1s 1669 ⏱️  Total time: 6h 28m
-23334.1s 1670 
-23334.1s 1671 ============================================================
-23334.1s 1672 🏁 All done! Total time: 6h 28m
-23334.1s 1673 ============================================================
-23334.1s 1674 
-23334.1s 1675 📊 Merging results from both GPUs...
-23334.1s 1676 ✅ Merged 24 experiments from 24 files into all_results.json
-23334.1s 1677 📋 Generating publication tables...
-23337.1s 1678 Loaded 24 experiment results.
-23337.1s 1679 
-23337.1s 1680 ## Table 1: Classification Results — CICIDS2017
-23337.1s 1681 *Mean ± std across 3 seeds*
-23337.1s 1682 
-23337.1s 1683 | Model | Accuracy | Precision | Recall | F1-Score | AUC-ROC |
-23337.1s 1684 |-------|----------|-----------|--------|----------|---------|
-23337.1s 1685 | CNN-LSTM | 96.79 ± 1.47 | 77.17 ± 11.17 | 94.48 ± 0.30 | 84.51 ± 6.42 | 97.17 ± 0.20 |
-23337.1s 1686 | Mamba | 96.07 ± 2.31 | 75.90 ± 17.50 | 90.97 ± 0.79 | 81.65 ± 9.74 | 97.59 ± 0.60 |
-23337.1s 1687 | GRU | 38.99 ± 42.52 | 39.22 ± 42.85 | 96.80 ± 4.52 | 42.55 ± 37.01 | 52.67 ± 32.64 |
-23337.1s 1688 | LSTM | 38.99 ± 42.52 | 39.21 ± 42.84 | 96.77 ± 4.57 | 42.53 ± 36.98 | 68.09 ± 23.18 |
-23337.1s 1689 
-23337.1s 1690 ## Table 1: Classification Results — UNSW-NB15
-23337.1s 1691 *Mean ± std across 3 seeds*
-23337.1s 1692 
-23337.1s 1693 | Model | Accuracy | Precision | Recall | F1-Score | AUC-ROC |
-23337.1s 1694 |-------|----------|-----------|--------|----------|---------|
-23337.1s 1695 | CNN-LSTM | 100.00 ± 0.00 | 100.00 ± 0.00 | 100.00 ± 0.00 | 100.00 ± 0.00 | nan ± nan |
-23337.1s 1696 | LSTM | 100.00 ± 0.00 | 100.00 ± 0.00 | 100.00 ± 0.00 | 100.00 ± 0.00 | nan ± nan |
-23337.1s 1697 | GRU | 98.65 ± 1.91 | 100.00 ± 0.00 | 98.65 ± 1.91 | 99.31 ± 0.97 | nan ± nan |
-23337.1s 1698 | Mamba | 13.37 ± 0.00 | 100.00 ± 0.00 | 13.37 ± 0.00 | 23.59 ± 0.00 | 0.00 ± 0.00 |
-23337.1s 1699 
-23337.1s 1700 ## Table 2: Efficiency Comparison — CICIDS2017
-23337.1s 1701 
-23337.1s 1702 | Model | Params | Memory (MB) | Latency (ms) | Throughput (/s) | Train Time (s) |
-23337.1s 1703 |-------|--------|-------------|--------------|-----------------|----------------|
-23337.1s 1704 | GRU | 373,505 | 1.42 | 0.57 ± 0.01 | 43951 | 194.6 |
-23337.1s 1705 | LSTM | 423,169 | 1.61 | 0.80 ± 0.01 | 30557 | 197.6 |
-23337.1s 1706 | CNN-LSTM | 409,601 | 1.56 | 0.92 ± 0.01 | 32914 | 375.9 |
-23337.1s 1707 | Mamba | 387,073 | 1.48 | 11.10 ± 0.26 | 2759 | 7200.5 |
-23337.1s 1708 
-23337.1s 1709 ## Table 2: Efficiency Comparison — UNSW-NB15
-23337.1s 1710 
-23337.1s 1711 | Model | Params | Memory (MB) | Latency (ms) | Throughput (/s) | Train Time (s) |
-23337.1s 1712 |-------|--------|-------------|--------------|-----------------|----------------|
-23337.1s 1713 | GRU | 381,569 | 1.46 | 0.60 ± 0.02 | 43556 | 112.4 |
-23337.1s 1714 | LSTM | 431,233 | 1.65 | 0.78 ± 0.00 | 30392 | 131.1 |
-23337.1s 1715 | CNN-LSTM | 433,793 | 1.65 | 0.91 ± 0.01 | 32116 | 132.8 |
-23337.1s 1716 | Mamba | 403,201 | 1.54 | 11.45 ± 0.22 | 2736 | 4059.6 |
-23337.1s 1717 
-23337.1s 1718 ## Table 3: Per-Attack-Type F1 (%) — CICIDS2017
-23337.1s 1719 
-23337.1s 1720 | Model | BENIGN | PortScan |
-23337.1s 1721 |-------|--------|----------|
-23337.1s 1722 | CNN-LSTM | 89.5 | 16.0 |
-23337.1s 1723 | GRU | 49.0 | 0.3 |
-23337.1s 1724 | LSTM | 48.9 | 0.3 |
-23337.1s 1725 | Mamba | 87.2 | 1.1 |
-23337.1s 1726 
-23337.1s 1727 ## Table 3: Per-Attack-Type F1 (%) — UNSW-NB15
-23337.1s 1728 
-23337.1s 1729 | Model | Unknown |
-23337.1s 1730 |-------|---------|
-23337.1s 1731 | CNN-LSTM | 100.0 |
-23337.1s 1732 | GRU | 99.3 |
-23337.1s 1733 | LSTM | 100.0 |
-23337.1s 1734 | Mamba | 23.6 |
-23337.1s 1735 
-23337.1s 1736 ## Table 4: Statistical Significance (Wilcoxon) — CICIDS2017
-23337.1s 1737 
-23337.1s 1738 | Model A | Model B | p-value | Significant (p<0.05) |
-23337.1s 1739 |---------|---------|---------|----------------------|
-23337.1s 1740 | CNN-LSTM | GRU | N/A | N/A |
-23337.1s 1741 | CNN-LSTM | LSTM | N/A | N/A |
-23337.1s 1742 | CNN-LSTM | Mamba | N/A | N/A |
-23337.1s 1743 | GRU | LSTM | N/A | N/A |
-23337.1s 1744 | GRU | Mamba | N/A | N/A |
-23337.1s 1745 | LSTM | Mamba | N/A | N/A |
-23337.1s 1746 
-23337.1s 1747 ## Table 4: Statistical Significance (Wilcoxon) — UNSW-NB15
-23337.1s 1748 
-23337.1s 1749 | Model A | Model B | p-value | Significant (p<0.05) |
-23337.1s 1750 |---------|---------|---------|----------------------|
-23337.1s 1751 | CNN-LSTM | GRU | N/A | N/A |
-23337.1s 1752 | CNN-LSTM | LSTM | N/A | N/A |
-23337.1s 1753 | CNN-LSTM | Mamba | N/A | N/A |
-23337.1s 1754 | GRU | LSTM | N/A | N/A |
-23337.1s 1755 | GRU | Mamba | N/A | N/A |
-23337.1s 1756 | LSTM | Mamba | N/A | N/A |
-23337.1s 1757 
-23337.1s 1758 
-23337.1s 1759 ✅ Tables saved to outputs/benchmark_results/benchmark_tables.md
-23337.5s 1760 
-23337.5s 1761 ✅ Results saved to outputs/benchmark_results/
-23340.6s 1762 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
-23340.6s 1763 cells[i][c] = re.sub('\\\\\|', '|', cell)
-23340.7s 1764 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
-23340.7s 1765 text = re.sub(r'_', '\_', text) # Escape underscores in display text
-23341.4s 1766 /usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
-23341.4s 1767 warn(
-23341.4s 1768 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
-23341.9s 1769 [NbConvertApp] Writing 128002 bytes to __notebook__.ipynb
-23344.3s 1770 /usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
-23344.3s 1771 warn(
-23344.4s 1772 [NbConvertApp] Converting notebook __notebook__.ipynb to html
-23345.2s 1773 [NbConvertApp] Writing 380970 bytes to __results__.html

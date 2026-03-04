@@ -266,9 +266,9 @@ def run_single_experiment(dataset_name, model_name, seed, config, device):
         val_ds = Subset(val_ds, val_idx.tolist())
         test_ds = Subset(test_ds, test_idx.tolist())
     
-    train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=False, num_workers=0)
-    val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False, num_workers=0)
-    test_loader = DataLoader(test_ds, batch_size=batch_size, shuffle=False, num_workers=0)
+    train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True, num_workers=4, pin_memory=True)
+    val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False, num_workers=2, pin_memory=True)
+    test_loader = DataLoader(test_ds, batch_size=batch_size, shuffle=False, num_workers=2, pin_memory=True)
     
     # Get input dimension (handle Subset wrapper)
     base_ds = train_ds.dataset if isinstance(train_ds, Subset) else train_ds
@@ -283,22 +283,24 @@ def run_single_experiment(dataset_name, model_name, seed, config, device):
     param_count = count_params(model)
     print(f"  Parameters: {param_count:,}")
     
-    # Compute class weight from training data
-    # Count positive (attack) and negative (benign) labels via sampling
+    # Compute class weight from FULL training set (not sampled)
+    # pos_weight is computed once and kept constant throughout training
     try:
-        sample_labels = []
-        for i in range(min(len(train_ds), 5000)):
-            _, label = train_ds[i]
-            sample_labels.append(float(label))
-        sample_labels = np.array(sample_labels)
-        n_pos = sample_labels.sum()
-        n_neg = len(sample_labels) - n_pos
+        print(f"  Computing class weights from full training set ({len(train_ds)} samples)...")
+        all_labels = []
+        for i in range(len(train_ds)):
+            _, label = train_ds[int(i)]
+            all_labels.append(float(label))
+        all_labels = np.array(all_labels)
+        n_pos = all_labels.sum()
+        n_neg = len(all_labels) - n_pos
         if n_pos > 0 and n_neg > 0:
             pos_weight = float(n_neg / n_pos)
-            # Cap it to avoid extreme values
+            # Cap to avoid extreme values on highly imbalanced sets
             pos_weight = min(pos_weight, 10.0)
         else:
             pos_weight = 1.0
+        print(f"  Class balance: {n_neg:.0f} benign / {n_pos:.0f} attack (full set) -> pos_weight={pos_weight:.2f}")
     except Exception:
         pos_weight = 1.0
     
@@ -363,6 +365,7 @@ def run_single_experiment(dataset_name, model_name, seed, config, device):
             'best_val_f1': train_result['best_val_f1'],
             'train_time_sec': train_result['train_time_sec'],
             'epochs_trained': train_result['epochs_trained'],
+            'history': train_result['history'],  # Per-epoch val_f1, val_loss, train_loss
         },
         'test': {
             'accuracy': test_metrics['accuracy'],
@@ -463,6 +466,12 @@ def main():
                     )
                     with open(result_file, 'w') as f:
                         json.dump(result, f, indent=2)
+                
+                # Free GPU memory between experiments to prevent OOM
+                import gc
+                gc.collect()
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
     
     # Save combined results
     combined_file = os.path.join(output_dir, 'all_results.json')

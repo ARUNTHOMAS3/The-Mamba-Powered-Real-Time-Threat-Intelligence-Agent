@@ -16,9 +16,10 @@ try:
     from mamba_ssm import Mamba as MambaSSM
     HAS_MAMBA_SSM = True
     print("[Mamba] Using CUDA-accelerated mamba-ssm kernels ⚡")
-except ImportError:
+except Exception as e:
     HAS_MAMBA_SSM = False
-    print("[Mamba] mamba-ssm not found, using pure PyTorch (slower)")
+    print(f"[Mamba] mamba-ssm import failed: {e}")
+    print("[Mamba] falling back to pure PyTorch (slower)")
 
 
 class MambaConfig:

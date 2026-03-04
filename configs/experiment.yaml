@@ -8,7 +8,6 @@
 datasets:
   - CICIDS2017
   - UNSW-NB15
-  - CIC-IDS2018
 
 # Models to compare (4 core models — sufficient for publication)
 models:
@@ -17,8 +16,8 @@ models:
   - GRU
   - CNN-LSTM
 
-# Random seeds for statistical significance (3 runs)
-seeds: [42, 123, 456]
+# Random seeds for statistical significance (10 runs — enables Wilcoxon p<0.05)
+seeds: [42, 123, 456, 789, 2024, 7, 314, 999, 1337, 8888]
 
 # Dataset Configuration
 dataset:

@@ -40,6 +40,7 @@ class UNSWNB15Dataset(Dataset):
         self.binary = binary
         self.seq_len = seq_len
         self.scaler_path = "outputs/scaler_unswnb15.pkl"
+        self.cache_dir = "outputs/cache"
         
         self.X_raw, self.y_raw, self.attack_labels = self._load_process_split()
         
@@ -48,21 +49,69 @@ class UNSWNB15Dataset(Dataset):
         else:
             self.num_windows = 0
     
+    def _get_cache_path(self):
+        """Get cache file path for the current split."""
+        return os.path.join(self.cache_dir, f"unswnb15_{self.split}.npz")
+    
     def _load_process_split(self):
         if not os.path.exists(self.root_dir):
             os.makedirs(self.root_dir, exist_ok=True)
         
+        # Check for cached data first (avoids re-reading 2.5M CSV rows)
+        cache_path = self._get_cache_path()
+        if os.path.exists(cache_path):
+            print(f"[{self.split.upper()}] Loading from cache: {cache_path}")
+            cached = np.load(cache_path, allow_pickle=True)
+            X_part = cached['X']
+            y_part = cached['y']
+            atk_part = cached['attack_labels']
+            print(f"  Cached shape: {X_part.shape}, labels: {len(y_part)}")
+            print(f"[{self.split.upper()}] Raw shape (before windowing): {X_part.shape}")
+            
+            # Apply scaling
+            if self.split == 'train':
+                scaler = StandardScaler()
+                X_part = scaler.fit_transform(X_part)
+                os.makedirs("outputs", exist_ok=True)
+                joblib.dump(scaler, self.scaler_path)
+                print(f"Fitting StandardScaler on Train split...")
+                print(f"Saved scaler to {self.scaler_path}")
+            else:
+                if os.path.exists(self.scaler_path):
+                    scaler = joblib.load(self.scaler_path)
+                    X_part = scaler.transform(X_part)
+                    print(f"Loading scaler from {self.scaler_path}...")
+                else:
+                    raise FileNotFoundError("Scaler not found. Run training split first.")
+            
+            print(f"[OK] Will generate {max(0, len(X_part) - self.seq_len + 1)} windows lazily")
+            return X_part, y_part, atk_part
+        
         # Try different file naming conventions
-        # IMPORTANT: Prioritize training/testing CSVs — they have proper headers
-        # (label, attack_cat columns). The raw _1 to _4 CSVs lack headers and
-        # will cause all samples to be mislabeled as Attack.
+        # IMPORTANT: Prioritize the full 4-part dataset (~2.5M rows) for
+        # publication-quality benchmarks. The training/testing CSVs are tiny
+        # samples (2,500 rows) and insufficient for deep learning experiments.
+        # The 4-part CSVs have no headers — we apply column names from the
+        # features description file.
+        
+        # Load column names from features file if available
+        features_path = os.path.join(self.root_dir, "NUSW-NB15_features.csv")
+        self._col_names = None
+        if os.path.exists(features_path):
+            try:
+                feat_df = pd.read_csv(features_path, encoding='latin1')
+                # The features file has 'Name' column with feature names
+                name_col = [c for c in feat_df.columns if c.strip().lower() == 'name']
+                if name_col:
+                    self._col_names = feat_df[name_col[0]].str.strip().tolist()
+            except Exception:
+                pass
+        
         possible_files = [
-            # Training/testing split (has headers with 'label' and 'attack_cat')
-            ["UNSW_NB15_training-set.csv", "UNSW_NB15_testing-set.csv"],
-            # Standard 4-part split (raw, no headers — needs column mapping)
+            # Full 4-part dataset (~2.5M rows, no headers — need column mapping)
             [f"UNSW-NB15_{i}.csv" for i in range(1, 5)],
-            # Alternative names
-            ["UNSW-NB15_features.csv"],
+            # Training/testing split (has headers, but only ~2,500 rows — fallback)
+            ["UNSW_NB15_training-set.csv", "UNSW_NB15_testing-set.csv"],
         ]
         
         available_files = []
@@ -81,14 +130,25 @@ class UNSWNB15Dataset(Dataset):
         print(f"Files: {available_files}")
         
         dfs = []
+        # Detect if we are loading headerless files (the 4-part CSVs)
+        is_headerless = any("UNSW-NB15_" in f and f[-5] in "1234" for f in available_files)
+        
         for f in available_files:
             print(f"  -> Processing {f}...")
             try:
-                chunk_iter = pd.read_csv(
-                    os.path.join(self.root_dir, f),
+                read_kwargs = dict(
                     encoding='latin1',
                     chunksize=100000,
-                    low_memory=False
+                    low_memory=False,
+                )
+                # Apply column names for headerless 4-part CSVs
+                if is_headerless and self._col_names:
+                    read_kwargs['header'] = None
+                    read_kwargs['names'] = self._col_names
+                
+                chunk_iter = pd.read_csv(
+                    os.path.join(self.root_dir, f),
+                    **read_kwargs
                 )
                 for chunk in chunk_iter:
                     chunk.columns = [c.strip() for c in chunk.columns]
@@ -162,7 +222,7 @@ class UNSWNB15Dataset(Dataset):
         del full_df
         gc.collect()
         
-        # Strict temporal split
+        # Strict temporal split — cache ALL splits to avoid re-parsing CSVs
         total_len = len(X_all)
         train_end = int(total_len * 0.70)
         val_end = int(total_len * 0.80)
@@ -170,22 +230,23 @@ class UNSWNB15Dataset(Dataset):
         print(f"Total samples: {total_len}")
         print(f"Train: 0-{train_end}, Val: {train_end}-{val_end}, Test: {val_end}-{total_len}")
         
-        if self.split == 'train':
-            X_part = X_all[:train_end]
-            y_part = y_all[:train_end]
-            atk_part = attack_labels[:train_end]
-        elif self.split == 'val':
-            X_part = X_all[train_end:val_end]
-            y_part = y_all[train_end:val_end]
-            atk_part = attack_labels[train_end:val_end]
-        elif self.split == 'test':
-            X_part = X_all[val_end:]
-            y_part = y_all[val_end:]
-            atk_part = attack_labels[val_end:]
-        else:
-            raise ValueError(f"Unknown split: {self.split}")
+        # Cache all 3 splits as .npz (unscaled, so scaler is always fresh)
+        os.makedirs(self.cache_dir, exist_ok=True)
+        splits = {
+            'train': (X_all[:train_end], y_all[:train_end], attack_labels[:train_end]),
+            'val': (X_all[train_end:val_end], y_all[train_end:val_end], attack_labels[train_end:val_end]),
+            'test': (X_all[val_end:], y_all[val_end:], attack_labels[val_end:]),
+        }
+        for sname, (X_s, y_s, a_s) in splits.items():
+            spath = os.path.join(self.cache_dir, f"unswnb15_{sname}.npz")
+            np.savez(spath, X=X_s, y=y_s, attack_labels=a_s)
+            print(f"  Cached {sname}: {X_s.shape} -> {spath}")
         
-        del X_all, y_all, attack_labels
+        X_part = splits[self.split][0]
+        y_part = splits[self.split][1]
+        atk_part = splits[self.split][2]
+        
+        del X_all, y_all, attack_labels, splits
         gc.collect()
         
         # Leakage-free scaling
